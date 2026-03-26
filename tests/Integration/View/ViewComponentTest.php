@@ -1239,7 +1239,7 @@ final class ViewComponentTest extends FrameworkIntegrationTestCase
             <div class="left">
                 <x-slot name="left"/>
             </div>
-        
+
             <div class="main">
                 <x-slot/>
             </div>
