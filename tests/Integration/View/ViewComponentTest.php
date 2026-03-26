@@ -1232,7 +1232,7 @@ final class ViewComponentTest extends FrameworkIntegrationTestCase
         $this->assertSnippetsMatch('<div class="a"><div><div class="b">/</div>"></div></div>">', $html);
     }
 
-    public function test_nested_slot_rendering()
+    public function test_nested_slot_rendering(): void
     {
         $this->view->registerViewComponent('x-a', <<<'HTML'
         <div>
