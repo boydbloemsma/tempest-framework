@@ -18,6 +18,18 @@ excludes = [
 	"packages/intl/bin/plural-rules.php",
 ]
 
+[analyzer]
+excludes = [
+    "vendor/**/*.php",
+    "tests/**/*.php",
+    "packages/*vendor/**/*.php",
+]
+ignore = [
+    "mixed-return-statement",
+    "mixed-argument",
+    "mixed-assignment",
+]
+
 [formatter]
 print-width = 180
 tab-width = 4

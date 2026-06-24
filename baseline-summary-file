@@ -1,0 +1,3840 @@
+4197 issues across 882 files
+
+packages/database/src/Builder/ModelInspector.php (152)
+  51  ██████████████████████████████  mixed-method-access
+  35  █████████████████████           possible-method-access-on-null
+  24  ██████████████                  invalid-argument
+  15  █████████                       mixed-return-statement
+   5  ███                             possibly-invalid-argument
+   5  ███                             unknown-iterator-type
+   4  ██                              possibly-null-argument
+   3  ██                              mixed-property-type-coercion
+   2  █                               less-specific-argument
+   2  █                               less-specific-nested-return-statement
+   2  █                               mixed-operand
+   1  █                               impossible-assignment
+   1  █                               invalid-return-statement
+   1  █                               no-value
+   1  █                               redundant-null-coalesce
+
+packages/mail/src/Testing/MailTester.php (127)
+  37  ██████████████████████████████  invalid-method-access
+  30  ████████████████████████        possible-method-access-on-null
+  25  ████████████████████            non-existent-method
+   7  ██████                          non-existent-class-like
+   5  ████                            mixed-method-access
+   4  ███                             non-existent-class
+   4  ███                             possibly-null-property-access
+   3  ██                              mixed-return-statement
+   2  ██                              no-valid-catch-type-found
+   2  ██                              non-existent-catch-type
+   2  ██                              possibly-null-argument
+   1  █                               invalid-iterator
+   1  █                               missing-return-statement
+   1  █                               mixed-property-type-coercion
+   1  █                               no-value
+   1  █                               possibly-invalid-argument
+   1  █                               template-constraint-violation
+
+src/Tempest/Framework/Testing/Http/TestResponseHelper.php (101)
+  41  ██████████████████████████████  non-existent-method
+   9  ███████                         possible-method-access-on-null
+   8  ██████                          invalid-property-access
+   8  ██████                          non-existent-property
+   7  █████                           possibly-null-property-access
+   6  ████                            mixed-method-access
+   3  ██                              invalid-array-access
+   3  ██                              mixed-array-access
+   2  █                               less-specific-argument
+   2  █                               possibly-invalid-argument
+   2  █                               possibly-null-argument
+   2  █                               redundant-docblock-type
+   1  █                               implicit-to-string-cast
+   1  █                               missing-return-statement
+   1  █                               mixed-property-access
+   1  █                               no-valid-catch-type-found
+   1  █                               non-existent-catch-type
+   1  █                               possibly-null-array-access
+   1  █                               possibly-null-iterator
+   1  █                               template-constraint-violation
+
+tests/Architecture/ArchitectureTestCase.php (95)
+  39  ██████████████████████████████  non-existent-method
+  34  ██████████████████████████      mixed-method-access
+  11  ████████                        mixed-return-statement
+  11  ████████                        non-existent-class-like
+
+packages/storage/src/GenericStorage.php (65)
+  23  ██████████████████████████████  invalid-method-access
+  23  ██████████████████████████████  possible-method-access-on-null
+  11  ██████████████                  mixed-return-statement
+   5  ███████                         non-existent-class-like
+   2  ███                             non-existent-class
+   1  █                               never-return
+
+packages/support/src/Arr/ManipulatesArray.php (65)
+  44  ██████████████████████████████  mixed-return-statement
+   8  █████                           possibly-invalid-argument
+   5  ███                             unsafe-instantiation
+   3  ██                              less-specific-nested-argument-type
+   2  █                               docblock-type-mismatch
+   2  █                               invalid-implements-tag
+   1  █                               invalid-argument
+
+packages/view/src/Elements/ViewComponentElement.php (64)
+  16  ██████████████████████████████  mixed-property-access
+  12  ███████████████████████         possibly-invalid-argument
+   6  ███████████                     implicit-to-string-cast
+   6  ███████████                     mixed-method-access
+   5  █████████                       mixed-operand
+   3  ██████                          null-argument
+   3  ██████                          redundant-comparison
+   2  ████                            invalid-return-statement
+   2  ████                            less-specific-nested-return-statement
+   2  ████                            mixed-property-type-coercion
+   2  ████                            redundant-condition
+   1  ██                              impossible-condition
+   1  ██                              less-specific-nested-argument-type
+   1  ██                              possibly-null-operand
+   1  ██                              redundant-logical-operation
+   1  ██                              reference-to-undefined-variable
+
+packages/database/src/Builder/QueryBuilders/UpdateQueryBuilder.php (55)
+  10  ██████████████████████████████  mixed-method-access
+  10  ██████████████████████████████  mixed-property-access
+   5  ███████████████                 less-specific-argument
+   5  ███████████████                 possibly-null-argument
+   5  ███████████████                 possibly-null-operand
+   3  █████████                       possible-method-access-on-null
+   3  █████████                       possibly-invalid-argument
+   2  ██████                          invalid-array-element-key
+   2  ██████                          less-specific-nested-return-statement
+   2  ██████                          string-member-selector
+   1  ███                             invalid-array-index
+   1  ███                             invalid-callable
+   1  ███                             invalid-member-selector
+   1  ███                             invalid-property-write
+   1  ███                             invalid-return-statement
+   1  ███                             less-specific-nested-argument-type
+   1  ███                             possibly-null-array-index
+   1  ███                             possibly-null-property-access
+
+tests/Benchmark/Container/ContainerBench.php (51)
+  51  ██████████████████████████████  non-existent-attribute-class
+
+packages/generation/src/Php/SimplifiesClassNames.php (43)
+  27  ██████████████████████████████  mixed-method-access
+   9  ██████████                      invalid-iterator
+   2  ██                              mixed-operand
+   2  ██                              non-existent-class-like
+   1  █                               invalid-method-access
+   1  █                               reference-to-undefined-variable
+   1  █                               unknown-iterator-type
+
+packages/support/src/Str/functions.php (42)
+  14  ██████████████████████████████  possibly-invalid-argument
+   7  ███████████████                 implicit-to-string-cast
+   7  ███████████████                 possibly-null-argument
+   3  ██████                          mixed-return-statement
+   3  ██████                          non-existent-method
+   2  ████                            invalid-return-statement
+   2  ████                            possibly-null-operand
+   2  ████                            redundant-cast
+   1  ██                              docblock-parameter-narrowing
+   1  ██                              nullable-return-statement
+
+packages/support/src/Arr/functions.php (41)
+  13  ██████████████████████████████  less-specific-nested-argument-type
+   8  ██████████████████              mixed-return-statement
+   5  ████████████                    invalid-return-statement
+   2  █████                           impossible-condition
+   2  █████                           template-constraint-violation
+   2  █████                           too-many-arguments
+   1  ██                              invalid-array-access
+   1  ██                              invalid-array-index
+   1  ██                              invalid-callable
+   1  ██                              possibly-invalid-argument
+   1  ██                              possibly-null-argument
+   1  ██                              possibly-null-array-index
+   1  ██                              redundant-comparison
+   1  ██                              redundant-condition
+   1  ██                              reference-to-undefined-variable
+
+packages/cache/src/GenericCache.php (38)
+  19  ██████████████████████████████  mixed-method-access
+  12  ███████████████████             invalid-method-access
+   2  ███                             mixed-return-statement
+   2  ███                             non-existent-class-like
+   1  ██                              mixed-operand
+   1  ██                              possible-method-access-on-null
+   1  ██                              possibly-null-argument
+
+packages/console/src/Components/TextBuffer.php (38)
+  21  ██████████████████████████████  possibly-null-argument
+   8  ███████████                     possibly-null-array-access
+   6  █████████                       mixed-operand
+   2  ███                             invalid-operand
+   1  █                               less-specific-return-statement
+
+packages/database/src/Builder/QueryBuilders/HasWhereQueryBuilderMethods.php (38)
+  11  ██████████████████████████████  incompatible-return-type
+   9  █████████████████████████       non-existent-property
+   8  ██████████████████████          mixed-method-access
+   7  ███████████████████             non-existent-method
+   1  ███                             mixed-operand
+   1  ███                             non-existent-class-like
+   1  ███                             possibly-invalid-argument
+
+packages/generation/src/Php/ManipulatesPhpClasses.php (35)
+  18  ██████████████████████████████  invalid-method-access
+   7  ████████████                    mixed-method-access
+   2  ███                             impossible-assignment
+   2  ███                             non-existent-class-like
+   1  ██                              invalid-clone
+   1  ██                              invalid-iterator
+   1  ██                              mixed-array-access
+   1  ██                              mixed-return-statement
+   1  ██                              no-value
+   1  ██                              non-existent-class
+
+packages/process/src/Testing/ProcessTester.php (32)
+  10  ██████████████████████████████  possibly-null-property-access
+   7  █████████████████████           non-existent-method
+   5  ███████████████                 non-existent-class
+   4  ████████████                    possibly-null-iterator
+   3  █████████                       possibly-invalid-argument
+   1  ███                             invalid-return-statement
+   1  ███                             possible-method-access-on-null
+   1  ███                             too-many-arguments
+
+packages/log/src/LogLevel.php (31)
+  18  ██████████████████████████████  non-existent-class-like
+   8  █████████████                   unreachable-match-arm
+   2  ███                             never-return
+   1  ██                              invalid-method-access
+   1  ██                              match-not-exhaustive
+   1  ██                              mixed-return-statement
+
+packages/console/src/Testing/ConsoleTester.php (30)
+  16  ██████████████████████████████  possible-method-access-on-null
+   8  ███████████████                 non-existent-method
+   2  ████                            mixed-property-type-coercion
+   1  ██                              mixed-return-statement
+   1  ██                              non-existent-class-like
+   1  ██                              possibly-invalid-argument
+   1  ██                              possibly-null-property-access
+
+packages/router/src/Static/StaticGenerateCommand.php (29)
+  9  ██████████████████████████████  possibly-null-argument
+  7  ███████████████████████         possibly-false-argument
+  2  ███████                         mixed-method-access
+  2  ███████                         mixed-operand
+  1  ███                             impossible-type-comparison
+  1  ███                             invalid-iterator
+  1  ███                             mismatched-array-index
+  1  ███                             possibly-false-operand
+  1  ███                             possibly-invalid-argument
+  1  ███                             possibly-null-array-index
+  1  ███                             possibly-null-operand
+  1  ███                             possibly-null-property-access
+  1  ███                             redundant-docblock-type
+
+packages/auth/src/OAuth/GenericOAuthClient.php (27)
+  5  ██████████████████████████████  invalid-method-access
+  5  ██████████████████████████████  non-existent-class-like
+  4  ████████████████████████        mixed-method-access
+  2  ████████████                    mixed-return-statement
+  2  ████████████                    no-valid-catch-type-found
+  2  ████████████                    non-existent-catch-type
+  2  ████████████                    possibly-invalid-argument
+  1  ██████                          invalid-array-element
+  1  ██████                          invalid-return-statement
+  1  ██████                          missing-template-parameter
+  1  ██████                          never-return
+  1  ██████                          non-existent-class
+
+packages/database/src/Builder/QueryBuilders/QueryBuilder.php (27)
+  8  ██████████████████████████████  docblock-type-mismatch
+  4  ███████████████                 less-specific-nested-argument-type
+  4  ███████████████                 mixed-property-access
+  4  ███████████████                 string-member-selector
+  3  ███████████                     ambiguous-object-property-access
+  1  ████                            invalid-member-selector
+  1  ████                            less-specific-argument
+  1  ████                            mixed-return-statement
+  1  ████                            possible-method-access-on-null
+
+packages/database/src/Builder/QueryBuilders/HasWhereRelationMethods.php (25)
+  6  ██████████████████████████████  mixed-property-access
+  4  ████████████████████            less-specific-return-statement
+  4  ████████████████████            non-existent-class-like
+  3  ███████████████                 mixed-method-access
+  3  ███████████████                 non-existent-method
+  2  ██████████                      non-existent-property
+  2  ██████████                      redundant-cast
+  1  █████                           invalid-argument
+
+packages/database/src/Builder/QueryBuilders/InsertQueryBuilder.php (23)
+  5  ██████████████████████████████  possibly-invalid-argument
+  4  ████████████████████████        possible-method-access-on-null
+  3  ██████████████████              possibly-null-operand
+  3  ██████████████████              string-member-selector
+  2  ████████████                    mixed-method-access
+  1  ██████                          ambiguous-object-property-access
+  1  ██████                          invalid-callable
+  1  ██████                          invalid-iterator
+  1  ██████                          mixed-property-access
+  1  ██████                          possibly-null-argument
+  1  ██████                          possibly-null-property-access
+
+packages/storage/src/Testing/TestingStorage.php (23)
+  11  ██████████████████████████████  non-existent-method
+  10  ███████████████████████████     non-existent-class-like
+   2  █████                           possibly-invalid-argument
+
+packages/upgrade/tests/RectorTester.php (23)
+  6  ██████████████████████████████  possibly-null-argument
+  4  ████████████████████            mixed-method-access
+  3  ███████████████                 impossible-assignment
+  3  ███████████████                 non-existent-class
+  3  ███████████████                 non-existent-method
+  2  ██████████                      possibly-invalid-argument
+  1  █████                           invalid-destructuring-source
+  1  █████                           non-existent-class-like
+
+packages/auth/src/OAuth/SupportedOAuthProvider.php (22)
+  11  ██████████████████████████████  invalid-enum-case-value
+  11  ██████████████████████████████  non-existent-class-like
+
+packages/auth/src/OAuth/Testing/TestingOAuthClient.php (21)
+  7  ██████████████████████████████  non-existent-method
+  3  █████████████                   non-existent-class-like
+  2  █████████                       invalid-method-access
+  2  █████████                       possibly-null-array-access
+  1  ████                            impossible-assignment
+  1  ████                            invalid-property-assignment-value
+  1  ████                            missing-template-parameter
+  1  ████                            mixed-property-type-coercion
+  1  ████                            never-return
+  1  ████                            non-existent-class
+  1  ████                            possibly-invalid-argument
+
+packages/console/src/Components/Interactive/TaskComponent.php (21)
+  6  ██████████████████████████████  non-existent-class-like
+  3  ███████████████                 invalid-generator-return-type
+  2  ██████████                      possibly-invalid-argument
+  2  ██████████                      possibly-null-argument
+  1  █████                           impossible-condition
+  1  █████                           incompatible-return-type
+  1  █████                           invalid-property-assignment-value
+  1  █████                           invalid-return-statement
+  1  █████                           non-existent-method
+  1  █████                           possibly-undefined-variable
+  1  █████                           redundant-comparison
+  1  █████                           too-many-arguments
+
+packages/debug/src/Debug.php (21)
+  7  ██████████████████████████████  non-existent-method
+  4  █████████████████               mixed-operand
+  2  █████████                       impossible-assignment
+  2  █████████                       non-existent-class
+  2  █████████                       possible-method-access-on-null
+  1  ████                            impossible-condition
+  1  ████                            invalid-return-statement
+  1  ████                            nullable-return-statement
+  1  ████                            redundant-logical-operation
+
+packages/http/src/Mappers/PsrRequestToGenericRequestMapper.php (21)
+  9  ██████████████████████████████  invalid-method-access
+  3  ██████████                      mixed-method-access
+  3  ██████████                      non-existent-class-like
+  1  ███                             invalid-argument
+  1  ███                             invalid-array-element
+  1  ███                             less-specific-argument
+  1  ███                             less-specific-nested-argument-type
+  1  ███                             mixed-return-statement
+  1  ███                             reference-to-undefined-variable
+
+packages/icon/src/IconCache.php (21)
+  6  ██████████████████████████████  invalid-method-access
+  6  ██████████████████████████████  possible-method-access-on-null
+  5  █████████████████████████       mixed-method-access
+  2  ██████████                      non-existent-class-like
+  1  █████                           mixed-return-statement
+  1  █████                           non-existent-class
+
+packages/support/src/Arr/IsIterable.php (21)
+  18  ██████████████████████████████  non-existent-property
+   2  ███                             mixed-array-assignment
+   1  ██                              mixed-array-access
+
+packages/database/src/IsDatabaseModel.php (20)
+  6  ██████████████████████████████  less-specific-return-statement
+  6  ██████████████████████████████  possible-method-access-on-null
+  2  ██████████                      possibly-null-argument
+  2  ██████████                      string-member-selector
+  1  █████                           invalid-member-selector
+  1  █████                           invalid-return-statement
+  1  █████                           less-specific-nested-return-statement
+  1  █████                           mixed-property-access
+
+packages/intl/src/Pluralizer/InflectorPluralizer.php (20)
+  4  ██████████████████████████████  possibly-null-operand
+  4  ██████████████████████████████  reference-to-undefined-variable
+  2  ███████████████                 invalid-method-access
+  2  ███████████████                 invalid-return-statement
+  2  ███████████████                 nullable-return-statement
+  1  ████████                        mixed-method-access
+  1  ████████                        mixed-property-type-coercion
+  1  ████████                        non-existent-class-like
+  1  ████████                        non-existent-method
+  1  ████████                        possibly-false-operand
+  1  ████████                        possibly-invalid-argument
+
+packages/support/src/Str/ManipulatesString.php (20)
+  7  ██████████████████████████████  possibly-invalid-argument
+  5  █████████████████████           less-specific-nested-return-statement
+  3  █████████████                   docblock-parameter-narrowing
+  3  █████████████                   unsafe-instantiation
+  1  ████                            less-specific-nested-argument-type
+  1  ████                            template-constraint-violation
+
+packages/discovery/src/BootDiscovery.php (19)
+  4  ██████████████████████████████  mixed-method-access
+  3  ███████████████████████         non-existent-catch-type
+  2  ███████████████                 avoid-catching-error
+  1  ████████                        invalid-method-access
+  1  ████████                        invalid-return-statement
+  1  ████████                        mixed-array-assignment
+  1  ████████                        no-valid-catch-type-found
+  1  ████████                        non-existent-class-like
+  1  ████████                        possibly-invalid-argument
+  1  ████████                        possibly-invalid-iterator
+  1  ████████                        possibly-null-argument
+  1  ████████                        possibly-null-array-access
+  1  ████████                        unsafe-instantiation
+
+packages/console/src/GenericConsole.php (18)
+  9  ██████████████████████████████  mixed-return-statement
+  3  ██████████                      non-existent-class-like
+  1  ███                             invalid-method-access
+  1  ███                             less-specific-nested-argument-type
+  1  ███                             mixed-operand
+  1  ███                             possible-method-access-on-null
+  1  ███                             possibly-invalid-argument
+  1  ███                             possibly-static-access-on-interface
+
+packages/container/src/GenericContainer.php (18)
+  17  ██████████████████████████████  unused-method
+   1  ██                              unused-property
+
+packages/database/src/Builder/QueryBuilders/SelectQueryBuilder.php (18)
+  5  ██████████████████████████████  mixed-return-statement
+  3  ██████████████████              named-argument-not-allowed
+  2  ████████████                    invalid-type-cast
+  2  ████████████                    possibly-invalid-argument
+  1  ██████                          invalid-argument
+  1  ██████                          invalid-property-write
+  1  ██████                          invalid-return-statement
+  1  ██████                          less-specific-nested-argument-type
+  1  ██████                          mixed-property-type-coercion
+  1  ██████                          possibly-null-argument
+
+packages/support/src/Regex/functions.php (17)
+  4  ██████████████████████████████  docblock-parameter-narrowing
+  4  ██████████████████████████████  less-specific-nested-argument-type
+  3  ███████████████████████         invalid-return-statement
+  2  ███████████████                 array-to-string-conversion
+  2  ███████████████                 redundant-cast
+  1  ████████                        mixed-return-statement
+  1  ████████                        no-value
+
+tests/Benchmark/Extension/MarkdownRenderer.php (17)
+  14  ██████████████████████████████  unused-method
+   2  ████                            unused-property
+   1  ██                              non-existent-class-like
+
+packages/cache/src/Testing/TestingCache.php (16)
+  7  ██████████████████████████████  non-existent-method
+  3  █████████████                   non-existent-class-like
+  2  █████████                       invalid-method-access
+  2  █████████                       possibly-invalid-argument
+  1  ████                            no-value
+  1  ████                            non-existent-class
+
+packages/core/src/ConfigCache.php (16)
+  4  ██████████████████████████████  invalid-method-access
+  4  ██████████████████████████████  mixed-method-access
+  4  ██████████████████████████████  possible-method-access-on-null
+  2  ███████████████                 non-existent-class-like
+  1  ████████                        mixed-return-statement
+  1  ████████                        non-existent-class
+
+packages/http/src/IsRequest.php (16)
+  12  ██████████████████████████████  incompatible-parameter-name
+   1  ███                             less-specific-argument
+   1  ███                             mixed-property-type-coercion
+   1  ███                             redundant-docblock-type
+   1  ███                             reference-to-undefined-variable
+
+packages/mapper/src/ObjectFactory.php (16)
+  6  ██████████████████████████████  mixed-method-access
+  5  █████████████████████████       mixed-return-statement
+  2  ██████████                      less-specific-nested-return-statement
+  2  ██████████                      mixed-property-type-coercion
+  1  █████                           redundant-docblock-type
+
+packages/support/src/IsEnumHelper.php (16)
+  9  ██████████████████████████████  non-existent-method
+  3  ██████████                      less-specific-return-statement
+  1  ███                             docblock-type-mismatch
+  1  ███                             invalid-return-statement
+  1  ███                             less-specific-nested-return-statement
+  1  ███                             unused-template-parameter
+
+tests/Benchmark/View/ViewRenderBench.php (16)
+  16  ██████████████████████████████  non-existent-attribute-class
+
+packages/auth/src/OAuth/Config/FacebookOAuthConfig.php (15)
+  6  ██████████████████████████████  invalid-method-access
+  4  ████████████████████            non-existent-class-like
+  1  █████                           docblock-type-mismatch
+  1  █████                           incompatible-parameter-type
+  1  █████                           mixed-return-statement
+  1  █████                           never-return
+  1  █████                           non-existent-class
+
+packages/auth/src/OAuth/Config/GoogleOAuthConfig.php (15)
+  6  ██████████████████████████████  invalid-method-access
+  4  ████████████████████            non-existent-class-like
+  1  █████                           docblock-type-mismatch
+  1  █████                           incompatible-parameter-type
+  1  █████                           mixed-return-statement
+  1  █████                           never-return
+  1  █████                           non-existent-class
+
+packages/auth/src/OAuth/Config/TwitchOAuthConfig.php (15)
+  6  ██████████████████████████████  invalid-method-access
+  4  ████████████████████            non-existent-class-like
+  1  █████                           docblock-type-mismatch
+  1  █████                           incompatible-parameter-type
+  1  █████                           mixed-return-statement
+  1  █████                           never-return
+  1  █████                           non-existent-class
+
+packages/datetime/src/functions.php (15)
+  8  ██████████████████████████████  mixed-operand
+  2  ████████                        match-not-exhaustive
+  1  ████                            avoid-catching-error
+  1  ████                            invalid-destructuring-source
+  1  ████                            invalid-return-statement
+  1  ████                            invalid-type-cast
+  1  ████                            less-specific-nested-return-statement
+
+packages/mail/src/Testing/AttachmentTester.php (15)
+  5  ██████████████████████████████  non-existent-method
+  4  ████████████████████████        invalid-method-access
+  4  ████████████████████████        mixed-return-statement
+  1  ██████                          mixed-method-access
+  1  ██████                          non-existent-class-like
+
+packages/process/src/InvokedSystemProcess.php (15)
+  7  ██████████████████████████████  invalid-method-access
+  4  █████████████████               mixed-return-statement
+  1  ████                            no-valid-catch-type-found
+  1  ████                            non-existent-catch-type
+  1  ████                            non-existent-class-like
+  1  ████                            possibly-invalid-argument
+
+packages/upgrade/config/sets/tempest30.php (15)
+  10  ██████████████████████████████  invalid-method-access
+   3  █████████                       non-existent-class-like
+   2  ██████                          non-existent-method
+
+packages/auth/src/OAuth/Config/GitHubOAuthConfig.php (14)
+  5  ██████████████████████████████  invalid-method-access
+  4  ████████████████████████        non-existent-class-like
+  1  ██████                          docblock-type-mismatch
+  1  ██████                          incompatible-parameter-type
+  1  ██████                          mixed-return-statement
+  1  ██████                          never-return
+  1  ██████                          non-existent-class
+
+packages/cache/src/Commands/CacheClearCommand.php (14)
+  4  ██████████████████████████████  non-iterable-object-iteration
+  3  ███████████████████████         possibly-invalid-argument
+  2  ███████████████                 possibly-invalid-iterator
+  2  ███████████████                 possibly-null-argument
+  2  ███████████████                 possibly-null-iterator
+  1  ████████                        ambiguous-object-method-access
+
+packages/database/src/GenericDatabase.php (14)
+  4  ██████████████████████████████  mixed-return-statement
+  2  ███████████████                 mixed-method-access
+  2  ███████████████                 mixed-property-access
+  2  ███████████████                 non-existent-property
+  2  ███████████████                 possible-method-access-on-null
+  1  ████████                        possibly-false-argument
+  1  ████████                        possibly-null-property-access
+
+packages/intl/src/MessageFormat/Formatter/MessageFormatter.php (14)
+  4  ██████████████████████████████  mixed-return-statement
+  4  ██████████████████████████████  possibly-null-property-access
+  2  ███████████████                 redundant-condition
+  1  ████████                        less-specific-argument
+  1  ████████                        possibly-false-operand
+  1  ████████                        possibly-null-argument
+  1  ████████                        property-type-coercion
+
+packages/process/src/GenericProcessExecutor.php (14)
+  7  ██████████████████████████████  mixed-method-access
+  1  ████                            invalid-argument
+  1  ████                            invalid-method-access
+  1  ████                            mixed-return-statement
+  1  ████                            non-existent-class
+  1  ████                            non-existent-class-like
+  1  ████                            non-existent-method
+  1  ████                            redundant-cast
+
+src/Tempest/Framework/Commands/ConfigShowCommand.php (14)
+  3  ██████████████████████████████  possibly-false-argument
+  2  ████████████████████            mismatched-array-index
+  2  ████████████████████            no-value
+  2  ████████████████████            non-existent-class
+  1  ██████████                      impossible-assignment
+  1  ██████████                      invalid-return-statement
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      possibly-null-argument
+
+packages/command-bus/src/MonitorAsyncCommands.php (13)
+  4  ██████████████████████████████  invalid-method-access
+  2  ███████████████                 possibly-invalid-argument
+  1  ████████                        impossible-assignment
+  1  ████████                        incompatible-property-visibility
+  1  ████████                        less-specific-argument
+  1  ████████                        non-existent-class
+  1  ████████                        non-existent-class-like
+  1  ████████                        possibly-null-argument
+  1  ████████                        possibly-null-array-index
+
+packages/console/src/Components/InteractiveComponentRenderer.php (13)
+  2  ██████████████████████████████  mixed-operand
+  2  ██████████████████████████████  possible-method-access-on-null
+  1  ███████████████                 impossible-condition
+  1  ███████████████                 invalid-callable
+  1  ███████████████                 invalid-iterator
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 mixed-method-access
+  1  ███████████████                 non-existent-property
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 possibly-null-argument
+  1  ███████████████                 redundant-type-comparison
+
+packages/database/src/BelongsToMany.php (13)
+  7  ██████████████████████████████  possible-method-access-on-null
+  4  █████████████████               implicit-to-string-cast
+  2  █████████                       possibly-null-operand
+
+packages/discovery/src/DiscoveryCache.php (13)
+  4  ██████████████████████████████  invalid-method-access
+  4  ██████████████████████████████  possible-method-access-on-null
+  2  ███████████████                 mixed-method-access
+  1  ████████                        mixed-return-statement
+  1  ████████                        non-existent-class
+  1  ████████                        non-existent-class-like
+
+packages/http-client/src/Testing/MockClient.php (13)
+  6  ██████████████████████████████  unused-method
+  6  ██████████████████████████████  unused-property
+  1  █████                           non-existent-class-like
+
+packages/http/src/Upload.php (13)
+  6  ██████████████████████████████  invalid-method-access
+  5  █████████████████████████       mixed-return-statement
+  2  ██████████                      non-existent-class-like
+
+tests/Integration/Console/Fixtures/InteractiveCommand.php (13)
+  3  ██████████████████████████████  possibly-null-argument
+  2  ████████████████████            array-to-string-conversion
+  2  ████████████████████            invalid-type-cast
+  2  ████████████████████            mixed-operand
+  2  ████████████████████            possibly-invalid-argument
+  1  ██████████                      incompatible-property-visibility
+  1  ██████████                      possibly-false-argument
+
+packages/core/src/Commands/InstallCommand.php (12)
+  9  ██████████████████████████████  mixed-method-access
+  1  ███                             impossible-assignment
+  1  ███                             redundant-comparison
+  1  ███                             redundant-logical-operation
+
+packages/database/src/Builder/QueryBuilders/WhereGroupBuilder.php (12)
+  6  ██████████████████████████████  mixed-property-access
+  2  ██████████                      invalid-argument
+  2  ██████████                      redundant-cast
+  1  █████                           invalid-array-element-key
+  1  █████                           possible-method-access-on-null
+
+packages/database/src/HasMany.php (12)
+  8  ██████████████████████████████  possible-method-access-on-null
+  2  ████████                        implicit-to-string-cast
+  1  ████                            mixed-operand
+  1  ████                            possibly-null-operand
+
+packages/database/src/HasManyThrough.php (12)
+  6  ██████████████████████████████  possible-method-access-on-null
+  4  ████████████████████            implicit-to-string-cast
+  2  ██████████                      possibly-null-operand
+
+packages/database/src/Migrations/MigrationManager.php (12)
+  4  ██████████████████████████████  mixed-property-access
+  3  ███████████████████████         mixed-method-access
+  2  ███████████████                 possibly-null-argument
+  1  ████████                        invalid-return-statement
+  1  ████████                        nullable-return-statement
+  1  ████████                        possibly-invalid-argument
+
+packages/database/src/QueryStatements/SelectStatement.php (12)
+  7  ██████████████████████████████  invalid-parameter-default-value
+  5  █████████████████████           implicit-to-string-cast
+
+packages/generation/src/Php/ClassManipulator.php (12)
+  4  ██████████████████████████████  mixed-property-type-coercion
+  3  ███████████████████████         non-existent-method
+  2  ███████████████                 possibly-invalid-argument
+  1  ████████                        invalid-method-access
+  1  ████████                        mixed-method-access
+  1  ████████                        non-existent-class
+
+packages/router/src/GenericResponseSender.php (12)
+  4  ██████████████████████████████  possibly-invalid-argument
+  3  ███████████████████████         possibly-null-argument
+  2  ███████████████                 non-iterable-object-iteration
+  1  ████████                        possibly-invalid-iterator
+  1  ████████                        possibly-null-iterator
+  1  ████████                        redundant-type-comparison
+
+packages/upgrade/config/sets/tempest20.php (12)
+  8  ██████████████████████████████  invalid-method-access
+  3  ███████████                     non-existent-class-like
+  1  ████                            non-existent-class
+
+src/Tempest/Framework/Testing/Http/HttpRouterTester.php (12)
+  3  ██████████████████████████████  less-specific-argument
+  2  ████████████████████            possibly-null-argument
+  1  ██████████                      invalid-argument
+  1  ██████████                      mixed-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      non-existent-class-like
+  1  ██████████                      non-existent-method
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      redundant-docblock-type
+
+tests/Benchmark/Database/QueryExecutionBench.php (12)
+  12  ██████████████████████████████  non-existent-attribute-class
+
+packages/database/src/HasTableAlias.php (11)
+  6  ██████████████████████████████  incompatible-return-type
+  3  ███████████████                 non-existent-property
+  2  ██████████                      mixed-method-access
+
+packages/mail/src/EmailToSymfonyEmailMapper.php (11)
+  4  ██████████████████████████████  non-existent-class-like
+  2  ███████████████                 non-existent-class
+  1  ████████                        impossible-assignment
+  1  ████████                        mixed-method-access
+  1  ████████                        never-return
+  1  ████████                        non-existent-method
+  1  ████████                        possibly-null-argument
+
+packages/process/src/ProcessPoolResults.php (11)
+  5  ██████████████████████████████  invalid-return-statement
+  2  ████████████                    missing-template-parameter
+  2  ████████████                    mixed-return-statement
+  1  ██████                          docblock-type-mismatch
+  1  ██████                          nullable-return-statement
+
+packages/process/src/Testing/TestingProcessExecutor.php (11)
+  5  ██████████████████████████████  possibly-invalid-argument
+  3  ██████████████████              mismatched-array-index
+  2  ████████████                    invalid-property-assignment-value
+  1  ██████                          invalid-argument
+
+src/Tempest/Framework/Testing/ModelFactory.php (11)
+  6  ██████████████████████████████  mixed-method-access
+  1  █████                           mixed-operand
+  1  █████                           mixed-return-statement
+  1  █████                           non-existent-method
+  1  █████                           possibly-invalid-argument
+  1  █████                           unknown-iterator-type
+
+packages/core/src/Exceptions/ExceptionTester.php (10)
+  5  ██████████████████████████████  non-existent-method
+  3  ██████████████████              possibly-null-property-access
+  1  ██████                          possibly-invalid-argument
+  1  ██████                          possibly-null-argument
+
+packages/core/src/PublishesFiles.php (10)
+  3  ██████████████████████████████  mixed-method-access
+  3  ██████████████████████████████  possibly-invalid-argument
+  2  ████████████████████            less-specific-argument
+  1  ██████████                      invalid-argument
+  1  ██████████                      invalid-method-access
+
+packages/database/src/Mappers/SelectModelMapper.php (10)
+  2  ██████████████████████████████  invalid-iterator
+  2  ██████████████████████████████  less-specific-argument
+  2  ██████████████████████████████  less-specific-nested-argument-type
+  1  ███████████████                 mixed-array-index
+  1  ███████████████                 mixed-operand
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 possibly-null-argument
+
+packages/discovery/src/Composer.php (10)
+  4  ██████████████████████████████  mixed-method-access
+  2  ███████████████                 mixed-array-assignment
+  2  ███████████████                 mixed-property-type-coercion
+  1  ████████                        invalid-argument
+  1  ████████                        mixed-return-statement
+
+packages/reflection/src/ClassReflector.php (10)
+  3  ██████████████████████████████  invalid-return-statement
+  1  ██████████                      falsable-return-statement
+  1  ██████████                      invalid-property-write
+  1  ██████████                      mixed-property-type-coercion
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      nullable-return-statement
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      string-member-selector
+
+packages/support/src/Random/functions.php (10)
+  4  ██████████████████████████████  mixed-return-statement
+  4  ██████████████████████████████  non-existent-method
+  1  ████████                        invalid-array-index
+  1  ████████                        mixed-method-access
+
+packages/view/src/ViewCache.php (10)
+  3  ██████████████████████████████  mixed-method-access
+  3  ██████████████████████████████  possible-method-access-on-null
+  1  ██████████                      invalid-return-statement
+  1  ██████████                      mixed-operand
+  1  ██████████                      possibly-null-argument
+  1  ██████████                      possibly-null-property-access
+
+tests/Benchmark/Http/GenericRouterBench.php (10)
+  10  ██████████████████████████████  non-existent-attribute-class
+
+packages/console/src/Actions/ExecuteConsoleCommand.php (9)
+  2  ██████████████████████████████  mixed-method-access
+  2  ██████████████████████████████  possible-method-access-on-null
+  2  ██████████████████████████████  possibly-null-property-access
+  1  ███████████████                 invalid-callable
+  1  ███████████████                 less-specific-nested-return-statement
+  1  ███████████████                 possibly-null-argument
+
+packages/console/src/Components/Concerns/OpensInEditor.php (9)
+  4  ██████████████████████████████  possibly-false-argument
+  2  ███████████████                 invalid-return-statement
+  2  ███████████████                 nullable-return-statement
+  1  ████████                        mixed-return-statement
+
+packages/container/src/Dependency.php (9)
+  3  ██████████████████████████████  invalid-class-string-expression
+  3  ██████████████████████████████  match-subject-type-is-never
+  3  ██████████████████████████████  never-return
+
+packages/datetime/src/DateTime.php (9)
+  5  ██████████████████████████████  possibly-false-argument
+  1  ██████                          invalid-property-assignment-value
+  1  ██████                          possibly-false-operand
+  1  ██████                          possibly-invalid-argument
+  1  ██████                          redundant-condition
+
+packages/event-bus/src/Testing/EventBusTester.php (9)
+  7  ██████████████████████████████  non-existent-method
+  1  ████                            invalid-class-constant-on-string
+  1  ████                            possibly-invalid-argument
+
+packages/http/src/Session/Session.php (9)
+  5  ██████████████████████████████  possibly-null-array-index
+  2  ████████████                    mixed-property-type-coercion
+  2  ████████████                    possibly-null-argument
+
+packages/intl/src/MessageFormat/Functions/StringFunction.php (9)
+  8  ██████████████████████████████  possibly-null-argument
+  1  ████                            possibly-invalid-argument
+
+packages/mapper/src/Mappers/ArrayToObjectMapper.php (9)
+  6  ██████████████████████████████  mixed-method-access
+  2  ██████████                      possibly-null-argument
+  1  █████                           less-specific-return-statement
+
+packages/reflection/src/MethodReflector.php (9)
+  3  ██████████████████████████████  mixed-method-access
+  2  ████████████████████            mixed-operand
+  1  ██████████                      docblock-type-mismatch
+  1  ██████████                      invalid-property-write
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      possibly-null-argument
+
+packages/view/src/Elements/IsElement.php (9)
+  2  ██████████████████████████████  possible-method-access-on-null
+  2  ██████████████████████████████  redundant-comparison
+  2  ██████████████████████████████  redundant-logical-operation
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 redundant-condition
+
+packages/view/src/Renderers/TempestViewRenderer.php (9)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  mixed-property-type-coercion
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-false-argument
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  redundant-docblock-type
+  1  ██████████████████████████████  reference-to-undefined-variable
+  1  ██████████████████████████████  string-member-selector
+  1  ██████████████████████████████  unsafe-instantiation
+
+tests/Integration/Database/Builder/IsDatabaseModelTest.php (9)
+  5  ██████████████████████████████  non-existent-class-like
+  1  ██████                          mixed-return-statement
+  1  ██████                          never-return
+  1  ██████                          non-existent-class
+  1  ██████                          non-existent-method
+
+tests/Integration/Support/GeneratesArguments.php (9)
+  4  ██████████████████████████████  non-existent-method
+  1  ████████                        possible-method-access-on-null
+  1  ████████                        possibly-invalid-argument
+  1  ████████                        string-member-selector
+  1  ████████                        unknown-class-instantiation
+  1  ████████                        unknown-match-subject-type
+
+packages/auth/src/OAuth/Config/AppleOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/DiscordOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/GenericOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/InstagramOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/LinkedInOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/MicrosoftOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/auth/src/OAuth/Config/SlackOAuthConfig.php (8)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-array-element
+  1  ██████████                      invalid-method-access
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/console/src/Highlight/IsTagInjection.php (8)
+  2  ██████████████████████████████  mixed-method-access
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+
+packages/core/src/FrameworkKernel.php (8)
+  2  ██████████████████████████████  invalid-property-assignment-value
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 mixed-method-access
+  1  ███████████████                 non-existent-method
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 possibly-null-argument
+  1  ███████████████                 redundant-docblock-type
+
+packages/reflection/src/PropertyReflector.php (8)
+  2  ██████████████████████████████  mixed-method-access
+  1  ███████████████                 ambiguous-object-property-access
+  1  ███████████████                 avoid-catching-error
+  1  ███████████████                 mixed-operand
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 reference-to-undefined-variable
+  1  ███████████████                 string-member-selector
+
+packages/storage/src/AdapterWasMissing.php (8)
+  8  ██████████████████████████████  non-existent-class-like
+
+packages/vite/src/TagsResolver/ManifestTagsResolver.php (8)
+  3  ██████████████████████████████  mixed-array-index
+  1  ██████████                      invalid-array-element
+  1  ██████████                      match-arm-always-true
+  1  ██████████                      mixed-method-access
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      unreachable-match-arm
+
+tests/Benchmark/Discovery/DiscoveryScanBench.php (8)
+  7  ██████████████████████████████  non-existent-attribute-class
+  1  ████                            possibly-invalid-argument
+
+tests/Integration/Http/RedisSessionTest.php (8)
+  8  ██████████████████████████████  unused-method
+
+packages/auth/src/AuthConfig.php (7)
+  5  ██████████████████████████████  possibly-null-array-index
+  2  ████████████                    invalid-property-assignment-value
+
+packages/cache/src/Testing/TestingLock.php (7)
+  4  ██████████████████████████████  non-existent-method
+  2  ███████████████                 possible-method-access-on-null
+  1  ████████                        mixed-operand
+
+packages/command-bus/src/HandleAsyncCommand.php (7)
+  4  ██████████████████████████████  possibly-null-argument
+  3  ███████████████████████         less-specific-argument
+
+packages/console/src/Components/OptionCollection.php (7)
+  2  ██████████████████████████████  property-type-coercion
+  1  ███████████████                 docblock-type-mismatch
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 missing-template-parameter
+  1  ███████████████                 mixed-operand
+  1  ███████████████                 mixed-property-type-coercion
+
+packages/console/src/Output/TailReader.php (7)
+  4  ██████████████████████████████  possibly-false-operand
+  2  ███████████████                 possibly-false-argument
+  1  ████████                        mixed-operand
+
+packages/console/src/Terminal/Terminal.php (7)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 invalid-operand
+  1  ███████████████                 invalid-property-assignment-value
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 possibly-null-argument
+
+packages/console/tests/CompletionHelperPhpTest.php (7)
+  3  ██████████████████████████████  unused-method
+  3  ██████████████████████████████  unused-property
+  1  ██████████                      non-existent-class-like
+
+packages/database/src/Builder/QueryBuilders/HasConvenientWhereMethods.php (7)
+  4  ██████████████████████████████  docblock-parameter-narrowing
+  1  ████████                        invalid-type-cast
+  1  ████████                        possibly-invalid-argument
+  1  ████████                        possibly-static-access-on-interface
+
+packages/database/src/Commands/MakeMigrationCommand.php (7)
+  4  ██████████████████████████████  possibly-invalid-argument
+  3  ███████████████████████         possibly-null-argument
+
+packages/database/src/QueryStatements/CountStatement.php (7)
+  2  ██████████████████████████████  docblock-type-mismatch
+  2  ██████████████████████████████  invalid-parameter-default-value
+  1  ███████████████                 implicit-to-string-cast
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 mixed-method-access
+
+packages/database/src/Testing/DatabaseTester.php (7)
+  3  ██████████████████████████████  less-specific-argument
+  3  ██████████████████████████████  non-existent-method
+  1  ██████████                      possibly-invalid-argument
+
+packages/generation/src/Php/StubFileGenerator.php (7)
+  2  ██████████████████████████████  impossible-condition
+  2  ██████████████████████████████  possibly-invalid-argument
+  2  ██████████████████████████████  redundant-type-comparison
+  1  ███████████████                 mixed-method-access
+
+packages/generation/src/TypeScript/GenericTypeScriptGenerator.php (7)
+  4  ██████████████████████████████  possible-method-access-on-null
+  1  ████████                        less-specific-argument
+  1  ████████                        mixed-property-access
+  1  ████████                        unknown-iterator-type
+
+packages/http-client/src/Driver/Psr18Driver.php (7)
+  4  ██████████████████████████████  unused-property
+  2  ███████████████                 unused-method
+  1  ████████                        non-existent-class-like
+
+packages/http/src/Mappers/RequestToObjectMapper.php (7)
+  3  ██████████████████████████████  possibly-null-argument
+  1  ██████████                      less-specific-argument
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      possibly-null-property-access
+
+packages/http/src/Mappers/RequestToPsrRequestMapper.php (7)
+  2  ██████████████████████████████  impossible-assignment
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+
+packages/icon/src/Icon.php (7)
+  3  ██████████████████████████████  possibly-null-argument
+  2  ████████████████████            invalid-return-statement
+  1  ██████████                      mixed-return-statement
+  1  ██████████                      possibly-invalid-argument
+
+packages/kv-store/src/Redis/PredisClient.php (7)
+  5  ██████████████████████████████  invalid-method-access
+  2  ████████████                    non-existent-class-like
+
+packages/mail/src/Transports/Postmark/PostmarkConfig.php (7)
+  3  ██████████████████████████████  non-existent-class-like
+  2  ████████████████████            non-existent-class
+  1  ██████████                      invalid-return-statement
+  1  ██████████                      mixed-return-statement
+
+packages/mail/src/Transports/Ses/SesMailerConfig.php (7)
+  3  ██████████████████████████████  non-existent-class-like
+  2  ████████████████████            non-existent-class
+  1  ██████████                      invalid-return-statement
+  1  ██████████                      mixed-return-statement
+
+packages/upgrade/config/sets/tempest34.php (7)
+  3  ██████████████████████████████  non-existent-class-like
+  2  ████████████████████            invalid-method-access
+  2  ████████████████████            non-existent-method
+
+packages/view/src/Renderers/BladeViewRenderer.php (7)
+  2  ██████████████████████████████  invalid-property-access
+  2  ██████████████████████████████  possibly-null-property-access
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-class-like
+
+packages/view/src/Slot.php (7)
+  3  ██████████████████████████████  ambiguous-object-property-access
+  1  ██████████                      invalid-return-statement
+  1  ██████████                      less-specific-return-statement
+  1  ██████████                      possibly-invalid-argument
+  1  ██████████                      possibly-null-argument
+
+tests/Benchmark/Http/Routing/Construction/RouteConfiguratorBench.php (7)
+  7  ██████████████████████████████  non-existent-attribute-class
+
+packages/console/src/Components/Interactive/SingleChoiceComponent.php (6)
+  3  ██████████████████████████████  incompatible-return-type
+  2  ████████████████████            possibly-invalid-argument
+  1  ██████████                      mixed-return-statement
+
+packages/console/src/Exceptions/ConsoleExceptionHandler.php (6)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 mixed-method-access
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 non-existent-method
+
+packages/cryptography/src/Password/GenericPasswordHasher.php (6)
+  2  ██████████████████████████████  avoid-catching-error
+  2  ██████████████████████████████  less-specific-nested-argument-type
+  1  ███████████████                 impossible-condition
+  1  ███████████████                 redundant-comparison
+
+packages/cryptography/tests/HasMoreIntegerAssertions.php (6)
+  3  ██████████████████████████████  non-existent-method
+  1  ██████████                      no-valid-catch-type-found
+  1  ██████████                      non-existent-catch-type
+  1  ██████████                      non-existent-class
+
+packages/database/src/Builder/QueryBuilders/CountQueryBuilder.php (6)
+  1  ██████████████████████████████  invalid-property-assignment-value
+  1  ██████████████████████████████  invalid-property-write
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  mixed-property-type-coercion
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-null-array-access
+
+packages/database/src/HasOneThrough.php (6)
+  4  ██████████████████████████████  implicit-to-string-cast
+  2  ███████████████                 possibly-null-operand
+
+packages/database/src/QueryStatements/UpdateStatement.php (6)
+  2  ██████████████████████████████  implicit-to-string-cast
+  2  ██████████████████████████████  invalid-parameter-default-value
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 less-specific-argument
+
+packages/database/tests/QueryAnalyzerTest.php (6)
+  3  ██████████████████████████████  unused-method
+  2  ████████████████████            unused-property
+  1  ██████████                      non-existent-class-like
+
+packages/discovery/src/DiscoveryItems.php (6)
+  1  ██████████████████████████████  invalid-array-element
+  1  ██████████████████████████████  invalid-array-element-key
+  1  ██████████████████████████████  missing-template-parameter
+  1  ██████████████████████████████  mixed-array-assignment
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/http/src/Cookie/Cookie.php (6)
+  2  ██████████████████████████████  redundant-comparison
+  2  ██████████████████████████████  redundant-logical-operation
+  1  ███████████████                 possibly-null-operand
+  1  ███████████████                 redundant-null-coalesce
+
+packages/http/tests/Mappers/PsrRequestToGenericRequestMapperTest.php (6)
+  3  ██████████████████████████████  unused-method
+  2  ████████████████████            unused-property
+  1  ██████████                      non-existent-class-like
+
+packages/idempotency/tests/IdempotencyMiddlewareTest.php (6)
+  5  ██████████████████████████████  unused-method
+  1  ██████                          non-existent-class-like
+
+packages/intl/src/Locale.php (6)
+  3  ██████████████████████████████  invalid-return-statement
+  2  ████████████████████            falsable-return-statement
+  1  ██████████                      nullable-return-statement
+
+packages/log/src/GenericLogger.php (6)
+  4  ██████████████████████████████  unused-property
+  2  ███████████████                 unused-method
+
+packages/mail/src/Transports/RoundRobinMailerConfig.php (6)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-property-default-value
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/mail/src/Transports/Ses/SesSmtpMailerConfig.php (6)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 invalid-property-default-value
+  1  ███████████████                 mixed-return-statement
+
+packages/mail/src/Transports/Smtp/SmtpMailerConfig.php (6)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 invalid-property-default-value
+  1  ███████████████                 mixed-return-statement
+
+packages/mapper/src/Casters/ArrayToObjectCollectionCaster.php (6)
+  4  ██████████████████████████████  possible-method-access-on-null
+  1  ████████                        invalid-iterator
+  1  ████████                        possibly-null-argument
+
+packages/process/src/OutputChannel.php (6)
+  2  ██████████████████████████████  non-existent-class-like
+  2  ██████████████████████████████  unreachable-match-arm
+  1  ███████████████                 match-default-arm-always-executed
+  1  ███████████████                 never-return
+
+packages/reflection/src/TypeReflector.php (6)
+  2  ██████████████████████████████  possibly-false-argument
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 invalid-callable
+  1  ███████████████                 mixed-return-statement
+
+packages/storage/src/Config/AzureStorageConfig.php (6)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 mixed-method-access
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+  1  ███████████████                 non-existent-method
+
+packages/storage/src/Config/GoogleCloudStorageConfig.php (6)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 impossible-assignment
+  1  ███████████████                 never-return
+
+packages/support/src/Namespace/functions.php (6)
+  2  ██████████████████████████████  invalid-property-access
+  2  ██████████████████████████████  possibly-null-argument
+  1  ███████████████                 docblock-parameter-narrowing
+  1  ███████████████                 possibly-invalid-argument
+
+packages/upgrade/config/sets/tempest310.php (6)
+  3  ██████████████████████████████  non-existent-class-like
+  2  ████████████████████            non-existent-method
+  1  ██████████                      invalid-method-access
+
+packages/validation/src/Validator.php (6)
+  2  ██████████████████████████████  invalid-return-statement
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 nullable-return-statement
+
+packages/view/src/Parser/TempestViewCompiler.php (6)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  mixed-array-index
+  1  ██████████████████████████████  named-argument-not-allowed
+  1  ██████████████████████████████  possibly-null-argument
+  1  ██████████████████████████████  possibly-undefined-variable
+
+packages/view/src/Renderers/TwigInitializer.php (6)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 impossible-assignment
+  1  ███████████████                 never-return
+
+src/Tempest/Framework/Testing/InstallerTester.php (6)
+  4  ██████████████████████████████  non-existent-method
+  1  ████████                        possibly-invalid-argument
+  1  ████████                        possibly-null-argument
+
+tests/Fixtures/Controllers/ValidationController.php (6)
+  6  ██████████████████████████████  possibly-null-property-access
+
+tests/Fixtures/Modules/Books/BookController.php (6)
+  3  ██████████████████████████████  mixed-method-access
+  3  ██████████████████████████████  mixed-property-access
+
+tests/Integration/Console/Commands/CompletionInstallCommandTest.php (6)
+  5  ██████████████████████████████  unused-property
+  1  ██████                          unused-method
+
+tests/Integration/Http/DatabaseSessionTest.php (6)
+  6  ██████████████████████████████  unused-method
+
+packages/cache/src/Config/CustomCacheConfig.php (5)
+  1  ██████████████████████████████  incompatible-return-type
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  malformed-docblock-comment
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Components/Interactive/TextInputComponent.php (5)
+  3  ██████████████████████████████  incompatible-return-type
+  2  ████████████████████            possibly-invalid-argument
+
+packages/console/src/Components/Option.php (5)
+  2  ██████████████████████████████  mixed-return-statement
+  1  ███████████████                 non-existent-property
+  1  ███████████████                 possible-method-access-on-null
+  1  ███████████████                 unknown-match-subject-type
+
+packages/console/src/Components/Static/StaticSingleChoiceComponent.php (5)
+  2  ██████████████████████████████  invalid-argument
+  2  ██████████████████████████████  mixed-property-access
+  1  ███████████████                 mixed-return-statement
+
+packages/console/src/Components/Static/StaticTaskComponent.php (5)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      invalid-method-access
+  1  ██████████                      no-value
+
+packages/console/src/Middleware/ValidateNamedArgumentsMiddleware.php (5)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  possible-method-access-on-null
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-argument
+  1  ██████████████████████████████  possibly-null-property-access
+
+packages/container/src/Commands/ContainerShowCommand.php (5)
+  2  ██████████████████████████████  too-many-arguments
+  1  ███████████████                 less-specific-argument
+  1  ███████████████                 possible-method-access-on-null
+  1  ███████████████                 possibly-invalid-argument
+
+packages/database/src/DatabaseInsightsProvider.php (5)
+  3  ██████████████████████████████  possibly-null-argument
+  1  ██████████                      possibly-false-argument
+  1  ██████████                      possibly-invalid-argument
+
+packages/database/tests/QueryCompileTest.php (5)
+  4  ██████████████████████████████  unused-method
+  1  ████████                        non-existent-class-like
+
+packages/datetime/src/Timestamp.php (5)
+  2  ██████████████████████████████  possible-method-access-on-null
+  1  ███████████████                 mixed-method-access
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 possibly-invalid-argument
+
+packages/event-bus/src/CallableEventHandler.php (5)
+  2  ██████████████████████████████  possible-method-access-on-null
+  1  ███████████████                 invalid-property-access
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 mixed-method-access
+
+packages/generation/src/TypeScript/StructureResolvers/ClassStructureResolver.php (5)
+  2  ██████████████████████████████  mixed-method-access
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-class-like
+
+packages/generation/src/TypeScript/StructureResolvers/EnumStructureResolver.php (5)
+  2  ██████████████████████████████  mixed-method-access
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-class-like
+
+packages/http-client/src/HttpClientDriverInitializer.php (5)
+  4  ██████████████████████████████  non-existent-method
+  1  ████████                        non-existent-class-like
+
+packages/http-client/tests/GenericHttpClientTest.php (5)
+  3  ██████████████████████████████  unused-property
+  1  ██████████                      non-existent-class-like
+  1  ██████████                      unused-method
+
+packages/http/src/RequestHeaders.php (5)
+  2  ██████████████████████████████  missing-template-parameter
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 nullable-return-statement
+  1  ███████████████                 possibly-invalid-argument
+
+packages/intl/tests/GenericTranslatorTest.php (5)
+  3  ██████████████████████████████  unused-property
+  1  ██████████                      non-existent-class-like
+  1  ██████████                      unused-method
+
+packages/kv-store/src/Redis/RedisInitializer.php (5)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class
+
+packages/kv-store/tests/PhpRedisClientTest.php (5)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-attribute-class
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/log/src/Channels/DailyLogChannel.php (5)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-constant
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  too-many-arguments
+
+packages/mail/src/Exceptions/MailerTransportWasMissing.php (5)
+  5  ██████████████████████████████  non-existent-class-like
+
+packages/mail/src/Transports/NullMailerConfig.php (5)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 invalid-property-default-value
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+
+packages/mapper/src/Mappers/StringToStringableMapper.php (5)
+  2  ██████████████████████████████  unknown-class-instantiation
+  1  ███████████████                 ambiguous-instantiation-target
+  1  ███████████████                 less-specific-return-statement
+  1  ███████████████                 possibly-null-property-access
+
+packages/router/src/ResolveRouteRequestMiddleware.php (5)
+  4  ██████████████████████████████  mixed-method-access
+  1  ████████                        mixed-return-statement
+
+packages/storage/src/Config/FTPStorageConfig.php (5)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+  1  ███████████████                 non-existent-method
+
+packages/storage/src/Config/S3StorageConfig.php (5)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+
+packages/storage/src/Config/SFTPStorageConfig.php (5)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+
+packages/storage/src/Config/ZipArchiveStorageConfig.php (5)
+  2  ██████████████████████████████  non-existent-class
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+
+packages/support/src/JavaScript/DependencyInstaller.php (5)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/support/src/Path/Path.php (5)
+  2  ██████████████████████████████  less-specific-nested-return-statement
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 possibly-invalid-argument
+
+packages/validation/src/Rules/IsEmail.php (5)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 impossible-assignment
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-class-like
+
+packages/view/src/Components/x-markdown.view.php (5)
+  3  ██████████████████████████████  non-existent-class-like
+  1  ██████████                      mixed-method-access
+  1  ██████████                      non-existent-method
+
+packages/view/src/MarkdownInitializer.php (5)
+  3  ██████████████████████████████  non-existent-class
+  1  ██████████                      never-return
+  1  ██████████                      non-existent-class-like
+
+src/Tempest/Framework/Commands/DatabaseSeedCommand.php (5)
+  2  ██████████████████████████████  non-iterable-object-iteration
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 possibly-invalid-iterator
+  1  ███████████████                 possibly-null-iterator
+
+src/Tempest/Framework/Commands/MetaViewComponentCommand.php (5)
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  mismatched-array-index
+  1  ██████████████████████████████  reference-to-undefined-variable
+  1  ██████████████████████████████  template-constraint-violation
+
+src/Tempest/Framework/Installers/ViewComponentsInstaller.php (5)
+  2  ██████████████████████████████  non-iterable-object-iteration
+  1  ███████████████                 mixed-array-index
+  1  ███████████████                 possibly-invalid-iterator
+  1  ███████████████                 possibly-null-iterator
+
+tests/Fixtures/Console/LexerProfileCommand.php (5)
+  3  ██████████████████████████████  possibly-false-argument
+  1  ██████████                      impossible-assignment
+  1  ██████████                      non-existent-class
+
+packages/auth/src/Installer/OAuthInstaller.php (4)
+  2  ██████████████████████████████  invalid-argument
+  1  ███████████████                 invalid-return-statement
+  1  ███████████████                 nullable-return-statement
+
+packages/cache/src/Config/FilesystemCacheConfig.php (4)
+  1  ██████████████████████████████  incompatible-return-type
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cache/src/Config/InMemoryCacheConfig.php (4)
+  1  ██████████████████████████████  incompatible-return-type
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cache/src/Config/PhpCacheConfig.php (4)
+  1  ██████████████████████████████  incompatible-return-type
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cache/src/Config/RedisCacheConfig.php (4)
+  1  ██████████████████████████████  incompatible-return-type
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/command-bus/src/CommandBusDiscovery.php (4)
+  3  ██████████████████████████████  mixed-method-access
+  1  ██████████                      invalid-destructuring-source
+
+packages/command-bus/tests/GenericCommandBusTest.php (4)
+  2  ██████████████████████████████  unused-property
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-method
+
+packages/console/src/Completion/CompletionMetadataParser.php (4)
+  3  ██████████████████████████████  mixed-property-access
+  1  ██████████                      invalid-iterator
+
+packages/console/src/CompletionRuntime.php (4)
+  2  ██████████████████████████████  possibly-false-operand
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-method
+
+packages/console/src/Components/Interactive/SearchComponent.php (4)
+  3  ██████████████████████████████  incompatible-return-type
+  1  ██████████                      array-to-string-conversion
+
+packages/console/src/HasConsole.php (4)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  nullable-return-statement
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Initializers/ConsoleInitializer.php (4)
+  2  ██████████████████████████████  non-existent-class-like
+  2  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Input/StdinInputBuffer.php (4)
+  2  ██████████████████████████████  falsable-return-statement
+  2  ██████████████████████████████  invalid-return-statement
+
+packages/console/src/Middleware/HelpMiddleware.php (4)
+  2  ██████████████████████████████  possibly-null-argument
+  1  ███████████████                 less-specific-nested-argument-type
+  1  ███████████████                 possibly-null-operand
+
+packages/console/src/Middleware/ResolveOrRescueMiddleware.php (4)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 possibly-invalid-argument
+  1  ███████████████                 possibly-null-argument
+
+packages/container/src/DependencyChain.php (4)
+  2  ██████████████████████████████  invalid-return-statement
+  2  ██████████████████████████████  nullable-return-statement
+
+packages/container/tests/ContainerTest.php (4)
+  3  ██████████████████████████████  unused-method
+  1  ██████████                      non-existent-class-like
+
+packages/core/src/Middleware.php (4)
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 missing-template-parameter
+  1  ███████████████                 mixed-method-access
+
+packages/core/src/functions.php (4)
+  2  ██████████████████████████████  possibly-null-argument
+  1  ███████████████                 invalid-argument
+  1  ███████████████                 possibly-null-property-access
+
+packages/cryptography/src/Encryption/EncryptionAlgorithm.php (4)
+  2  ██████████████████████████████  falsable-return-statement
+  2  ██████████████████████████████  invalid-return-statement
+
+packages/database/src/HasOne.php (4)
+  2  ██████████████████████████████  implicit-to-string-cast
+  1  ███████████████                 mixed-operand
+  1  ███████████████                 possibly-null-operand
+
+packages/database/tests/QueryExecutedTest.php (4)
+  3  ██████████████████████████████  unused-method
+  1  ██████████                      non-existent-class-like
+
+packages/datetime/src/Timezone.php (4)
+  4  ██████████████████████████████  reference-to-undefined-variable
+
+packages/debug/src/Stacktrace/Frame.php (4)
+  2  ██████████████████████████████  mixed-operand
+  2  ██████████████████████████████  named-argument-not-allowed
+
+packages/discovery/src/AutoloadDiscoveryLocations.php (4)
+  2  ██████████████████████████████  less-specific-argument
+  2  ██████████████████████████████  named-argument-not-allowed
+
+packages/generation/src/TypeScript/TypeResolverDiscovery.php (4)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 invalid-array-element-key
+  1  ███████████████                 mixed-property-type-coercion
+
+packages/generation/tests/TypeScript/GenerateTypesCommandTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/generation/tests/TypeScript/StructureResolvers/ClassStructureResolverTest.php (4)
+  2  ██████████████████████████████  unused-property
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-method
+
+packages/generation/tests/TypeScript/TypeScriptGenerationTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/generation/tests/TypeScript/Writers/DirectoryWriterTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/generation/tests/TypeScript/Writers/NamespacedFileWriterTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/http-client/src/Testing/ResponseBag.php (4)
+  4  ██████████████████████████████  non-existent-class-like
+
+packages/http/src/Session/Managers/DatabaseSessionManager.php (4)
+  4  ██████████████████████████████  mixed-property-access
+
+packages/icon/tests/IconTest.php (4)
+  3  ██████████████████████████████  unused-method
+  1  ██████████                      non-existent-class-like
+
+packages/intl/tests/LocaleTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/kv-store/tests/PredisClientTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/log/src/Channels/WeeklyLogChannel.php (4)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  too-many-arguments
+
+packages/mapper/src/CasterFactory.php (4)
+  3  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████                      mixed-return-statement
+
+packages/mapper/src/SerializerFactory.php (4)
+  2  ██████████████████████████████  invalid-class-string-expression
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 possibly-static-access-on-interface
+
+packages/process/src/Exceptions/ProcessHasTimedOut.php (4)
+  2  ██████████████████████████████  invalid-method-access
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 possibly-invalid-argument
+
+packages/process/src/ProcessResult.php (4)
+  3  ██████████████████████████████  invalid-method-access
+  1  ██████████                      non-existent-class-like
+
+packages/reflection/src/HasAttributes.php (4)
+  2  ██████████████████████████████  invalid-return-statement
+  1  ███████████████                 redundant-condition
+  1  ███████████████                 redundant-logical-operation
+
+packages/router/src/GenericRouter.php (4)
+  2  ██████████████████████████████  mixed-method-access
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 redundant-docblock-type
+
+packages/router/src/Highlight/WebHighlighterInitializer.php (4)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class-like
+
+packages/router/src/RouteBindingInitializer.php (4)
+  3  ██████████████████████████████  mixed-method-access
+  1  ██████████                      mixed-return-statement
+
+packages/router/tests/Routing/Matching/GenericRouteMatcherTest.php (4)
+  2  ██████████████████████████████  unused-property
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-method
+
+packages/storage/src/Config/CustomStorageConfig.php (4)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 invalid-argument
+  1  ███████████████                 invalid-return-statement
+
+packages/storage/src/Config/InMemoryStorageConfig.php (4)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+
+packages/storage/src/Config/LocalStorageConfig.php (4)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+
+packages/support/src/Filesystem/functions.php (4)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  template-constraint-violation
+
+packages/support/tests/Filesystem/UnixFunctionsTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/upgrade/config/sets/tempest28.php (4)
+  3  ██████████████████████████████  invalid-method-access
+  1  ██████████                      non-existent-class-like
+
+packages/validation/src/Rules/IsPhoneNumber.php (4)
+  2  ██████████████████████████████  mixed-method-access
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 non-existent-method
+
+packages/view/src/IsView.php (4)
+  3  ██████████████████████████████  mixed-array-access
+  1  ██████████                      string-member-selector
+
+packages/view/src/Parser/Token.php (4)
+  2  ██████████████████████████████  possibly-null-operand
+  1  ███████████████                 mixed-return-statement
+  1  ███████████████                 possibly-null-argument
+
+packages/view/src/Renderers/BladeInitializer.php (4)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 never-return
+  1  ███████████████                 non-existent-class
+
+packages/view/src/Renderers/TwigViewRenderer.php (4)
+  2  ██████████████████████████████  invalid-property-access
+  1  ███████████████                 invalid-method-access
+  1  ███████████████                 non-existent-class-like
+
+packages/view/tests/ViewCachePoolTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+tests/Benchmark/Http/Routing/Matching/GenericRouteMatcherBench.php (4)
+  4  ██████████████████████████████  non-existent-attribute-class
+
+tests/Integration/Core/FrameworkKernelExceptionHandlerTest.php (4)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/auth/src/Installer/oauth/OAuthControllerStub.php (3)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  less-specific-return-statement
+  1  ██████████████████████████████  template-constraint-violation
+
+packages/auth/tests/OAuthTest.php (3)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 unused-property
+
+packages/cache/src/UserCacheInsightsProvider.php (3)
+  1  ██████████████████████████████  invalid-class-string-expression
+  1  ██████████████████████████████  match-subject-type-is-never
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/clock/src/GenericClock.php (3)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Commands/CompleteCommand.php (3)
+  2  ██████████████████████████████  less-specific-nested-argument-type
+  1  ███████████████                 incompatible-property-visibility
+
+packages/console/src/Commands/MakeConfigCommand.php (3)
+  1  ██████████████████████████████  match-arm-always-true
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  unreachable-match-default-arm
+
+packages/console/src/Completion/CompletionEngine.php (3)
+  2  ██████████████████████████████  less-specific-nested-argument-type
+  1  ███████████████                 mixed-return-statement
+
+packages/console/src/Components/Interactive/MultipleChoiceComponent.php (3)
+  3  ██████████████████████████████  incompatible-return-type
+
+packages/console/src/Components/Interactive/PasswordComponent.php (3)
+  2  ██████████████████████████████  incompatible-return-type
+  1  ███████████████                 possibly-null-argument
+
+packages/console/src/Components/Interactive/ProgressBarComponent.php (3)
+  2  ██████████████████████████████  incompatible-return-type
+  1  ███████████████                 possibly-invalid-argument
+
+packages/console/src/Components/Renderers/KeyValueRenderer.php (3)
+  3  ██████████████████████████████  mixed-method-access
+
+packages/console/src/Highlight/ConsoleHighlighterInitializer.php (3)
+  1  ██████████████████████████████  never-return
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestTerminalTheme.php (3)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 unused-method
+
+packages/console/src/Input/ConsoleArgumentBag.php (3)
+  1  ██████████████████████████████  mixed-property-type-coercion
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-operand
+
+packages/console/src/Input/MemoryInputBuffer.php (3)
+  1  ██████████████████████████████  avoid-catching-error
+  1  ██████████████████████████████  invalid-property-access
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/console/src/Middleware/InvalidCommandMiddleware.php (3)
+  2  ██████████████████████████████  possible-method-access-on-null
+  1  ███████████████                 possibly-null-property-access
+
+packages/console/tests/CompletionRuntimeTest.php (3)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+packages/container/src/functions.php (3)
+  2  ██████████████████████████████  possible-method-access-on-null
+  1  ███████████████                 mixed-return-statement
+
+packages/core/src/EnvironmentInsightsProvider.php (3)
+  1  ██████████████████████████████  array-to-string-conversion
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  nullable-return-statement
+
+packages/core/src/IsComponentInstaller.php (3)
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 possibly-null-argument
+
+packages/core/src/Kernel/LoadConfig.php (3)
+  1  ██████████████████████████████  invalid-iterator
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  less-specific-nested-return-statement
+
+packages/core/src/Kernel/RegisterEmergencyExceptionHandler.php (3)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 impossible-assignment
+
+packages/database/src/Builder/QueryBuilders/DeleteQueryBuilder.php (3)
+  1  ██████████████████████████████  invalid-property-write
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/database/src/QueryAnalyzer.php (3)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-undefined-variable
+  1  ██████████████████████████████  reference-to-undefined-variable
+
+packages/database/src/QueryStatements/CreateEnumTypeStatement.php (3)
+  2  ██████████████████████████████  possibly-static-access-on-interface
+  1  ███████████████                 invalid-argument
+
+packages/database/src/QueryStatements/DeleteStatement.php (3)
+  1  ██████████████████████████████  implicit-to-string-cast
+  1  ██████████████████████████████  invalid-parameter-default-value
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/database/src/QueryStatements/EnumStatement.php (3)
+  2  ██████████████████████████████  possibly-static-access-on-interface
+  1  ███████████████                 invalid-argument
+
+packages/database/src/QueryStatements/FieldStatement.php (3)
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 invalid-return-statement
+
+packages/database/src/QueryStatements/WhereGroupStatement.php (3)
+  1  ██████████████████████████████  docblock-type-mismatch
+  1  ██████████████████████████████  invalid-array-index
+  1  ██████████████████████████████  invalid-parameter-default-value
+
+packages/database/src/functions.php (3)
+  2  ██████████████████████████████  docblock-type-mismatch
+  1  ███████████████                 less-specific-nested-argument-type
+
+packages/datetime/src/DateTimeConvenienceMethods.php (3)
+  2  ██████████████████████████████  non-existent-property
+  1  ███████████████                 invalid-return-statement
+
+packages/event-bus/src/EventBusDiscovery.php (3)
+  1  ██████████████████████████████  invalid-destructuring-source
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  possibly-null-operand
+
+packages/event-bus/src/GenericEventBus.php (3)
+  1  ██████████████████████████████  invalid-class-constant-on-string
+  1  ██████████████████████████████  invalid-property-access
+  1  ██████████████████████████████  possibly-false-iterator
+
+packages/generation/src/TypeScript/GenerateTypesCommand.php (3)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/http/src/Input/StdinInputStream.php (3)
+  2  ██████████████████████████████  possibly-false-argument
+  1  ███████████████                 mixed-return-statement
+
+packages/http/src/RequestFactory.php (3)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  non-existent-method
+
+packages/http/src/Session/Managers/RedisSessionManager.php (3)
+  1  ██████████████████████████████  invalid-destructuring-source
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/idempotency/tests/Fixtures/RecordingCache.php (3)
+  1  ██████████████████████████████  no-value
+  1  ██████████████████████████████  non-existent-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/idempotency/tests/IdempotentCommandMiddlewareTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/intl/tests/FormatterTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/log/src/Channels/AppendLogChannel.php (3)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 non-existent-class-like
+
+packages/log/src/Channels/SlackLogChannel.php (3)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 non-existent-class-like
+
+packages/log/src/Channels/SysLogChannel.php (3)
+  2  ██████████████████████████████  non-existent-class
+  1  ███████████████                 non-existent-class-like
+
+packages/log/src/FileHandlers/RotatingFileHandler.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/log/src/LoggerInitializer.php (3)
+  2  ██████████████████████████████  non-existent-class-like
+  1  ███████████████                 incompatible-return-type
+
+packages/log/src/TailLogsCommand.php (3)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  non-existent-property
+
+packages/mapper/src/Casters/EnumCaster.php (3)
+  2  ██████████████████████████████  mixed-return-statement
+  1  ███████████████                 possibly-invalid-argument
+
+packages/process/src/InvokedProcessPool.php (3)
+  1  ██████████████████████████████  docblock-type-mismatch
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/process/src/Pool.php (3)
+  1  ██████████████████████████████  docblock-type-mismatch
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/reflection/src/EnumReflector.php (3)
+  1  ██████████████████████████████  invalid-property-write
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/reflection/src/FunctionReflector.php (3)
+  1  ██████████████████████████████  docblock-type-mismatch
+  1  ██████████████████████████████  falsable-return-statement
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/router/src/Exceptions/HtmlExceptionRenderer.php (3)
+  2  ██████████████████████████████  less-specific-argument
+  1  ███████████████                 invalid-argument
+
+packages/router/src/Routing/Matching/GenericRouteMatcher.php (3)
+  1  ██████████████████████████████  invalid-operand
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  less-specific-return-statement
+
+packages/router/src/UriGenerator.php (3)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 less-specific-argument
+
+packages/router/tests/Routing/Construction/RouteConfiguratorTest.php (3)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+packages/router/tests/Routing/Matching/MatchingRegexTest.php (3)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+packages/storage/tests/StorageTest.php (3)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+packages/support/src/Math/functions.php (3)
+  2  ██████████████████████████████  avoid-catching-error
+  1  ███████████████                 invalid-return-statement
+
+packages/support/tests/Comparison/ComparisonTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateBindableResolveReturnTypeRector.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/validation/src/Rules/IsEnum.php (3)
+  2  ██████████████████████████████  possibly-static-access-on-interface
+  1  ███████████████                 invalid-constant-selector
+
+packages/view/src/Commands/MakeViewCommand.php (3)
+  1  ██████████████████████████████  match-arm-always-true
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  unreachable-match-default-arm
+
+packages/view/src/Components/x-form.view.php (3)
+  2  ██████████████████████████████  possibly-invalid-argument
+  1  ███████████████                 non-existent-class-like
+
+packages/view/src/Parser/TempestViewLexer.php (3)
+  2  ██████████████████████████████  redundant-isset-check
+  1  ███████████████                 possibly-null-argument
+
+packages/view/tests/AsAttributeTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+packages/view/tests/FallthroughAttributesTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+tests/Benchmark/Kernel/KernelBootBench.php (3)
+  3  ██████████████████████████████  non-existent-attribute-class
+
+tests/Integration/Auth/Authentication/SessionAuthenticatorTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 unused-property
+
+tests/Integration/Console/Commands/CompletionUninstallCommandTest.php (3)
+  3  ██████████████████████████████  unused-property
+
+tests/Integration/Console/Fixtures/VariadicCommand.php (3)
+  3  ██████████████████████████████  possibly-false-argument
+
+tests/Integration/Core/FrameworkKernelDiscoveryCacheFallbackTest.php (3)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Framework/PHPStan/LazyReadWritePropertiesExtensionTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 non-existent-class-like
+
+tests/Integration/Http/FileSessionTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 unused-property
+
+tests/Integration/Http/SessionCleanupStrategyTest.php (3)
+  3  ██████████████████████████████  unused-method
+
+tests/Integration/KeyValue/RedisTest.php (3)
+  2  ██████████████████████████████  unused-method
+  1  ███████████████                 unused-property
+
+tests/Integration/Mapper/Fixtures/DoubleStringCaster.php (3)
+  2  ██████████████████████████████  mixed-operand
+  1  ███████████████                 mixed-return-statement
+
+packages/auth/src/AccessControl/PolicyBasedAccessControl.php (2)
+  1  ██████████████████████████████  less-specific-return-statement
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/auth/src/Authentication/SessionAuthenticator.php (2)
+  2  ██████████████████████████████  mixed-property-type-coercion
+
+packages/auth/tests/SessionAuthenticatorTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/cache/src/CacheInitializer.php (2)
+  2  ██████████████████████████████  mixed-operand
+
+packages/cache/src/Commands/CacheStatusCommand.php (2)
+  1  ██████████████████████████████  incompatible-property-visibility
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/clock/src/MockClock.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/clock/src/PsrClock.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-property
+
+packages/command-bus/src/AsyncCommandRepositories/FileCommandRepository.php (2)
+  1  ██████████████████████████████  less-specific-nested-return-statement
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/command-bus/src/AsyncCommandRepositories/MemoryRepository.php (2)
+  1  ██████████████████████████████  less-specific-return-statement
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/command-bus/src/GenericCommandBus.php (2)
+  1  ██████████████████████████████  invalid-callable
+  1  ██████████████████████████████  mixed-method-access
+
+packages/console/src/Commands/AboutCommand.php (2)
+  2  ██████████████████████████████  redundant-docblock-type
+
+packages/console/src/Commands/CompletionInstallCommand.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  non-existent-method
+
+packages/console/src/Commands/CompletionShowCommand.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  non-existent-method
+
+packages/console/src/Commands/MakeMiddlewareCommand.php (2)
+  1  ██████████████████████████████  match-arm-always-true
+  1  ██████████████████████████████  unreachable-match-default-arm
+
+packages/console/src/Components/Interactive/ConfirmComponent.php (2)
+  2  ██████████████████████████████  incompatible-return-type
+
+packages/console/src/Components/Renderers/ChoiceRenderer.php (2)
+  1  ██████████████████████████████  mixed-operand
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/console/src/Components/Renderers/TaskRenderer.php (2)
+  2  ██████████████████████████████  possibly-null-operand
+
+packages/console/src/Components/Renderers/TextInputRenderer.php (2)
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/console/src/Components/Static/StaticMultipleChoiceComponent.php (2)
+  2  ██████████████████████████████  invalid-argument
+
+packages/console/src/Components/Static/StaticSearchComponent.php (2)
+  1  ██████████████████████████████  invalid-array-element
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/console/src/ConsoleCommand.php (2)
+  1  ██████████████████████████████  implicit-to-string-cast
+  1  ██████████████████████████████  mixed-method-access
+
+packages/console/src/ConsoleInputBuilder.php (2)
+  1  ██████████████████████████████  less-specific-nested-return-statement
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Highlight/DynamicTokenType.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-property
+
+packages/console/src/Highlight/LogLanguage/Patterns/LogNamePattern.php (2)
+  2  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/LogLanguage/Patterns/LogTimestampPattern.php (2)
+  2  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/VarExportLanguage/Patterns/VarExportTagPattern.php (2)
+  2  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Middleware/OverviewMiddleware.php (2)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Output/MemoryOutputBuffer.php (2)
+  2  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/console/tests/Enums/ShellTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/console/tests/OptionCollectionTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/core/src/Exceptions/LoggingExceptionReporter.php (2)
+  2  ██████████████████████████████  non-existent-method
+
+packages/core/src/InstallerDefinition.php (2)
+  1  ██████████████████████████████  invalid-property-assignment-value
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/core/tests/EnvTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/cryptography/src/Encryption/GenericEncrypter.php (2)
+  2  ██████████████████████████████  possibly-false-argument
+
+packages/cryptography/tests/Encryption/EncryptionTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/database/src/BelongsTo.php (2)
+  1  ██████████████████████████████  implicit-to-string-cast
+  1  ██████████████████████████████  mixed-operand
+
+packages/database/src/MigrationDiscovery.php (2)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/database/src/Query.php (2)
+  1  ██████████████████████████████  invalid-operand
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/database/src/QueryStatements/InsertStatement.php (2)
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  invalid-parameter-default-value
+
+packages/database/src/RawSql.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  nullable-return-statement
+
+packages/database/src/Serializers/DataTransferObjectSerializer.php (2)
+  1  ██████████████████████████████  incompatible-parameter-name
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/database/src/Serializers/EncryptedSerializer.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/database/tests/Migrations/RunnableMigrationsTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/database/tests/QueryStatements/AlterTableStatementTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/debug/src/DOMDebug.php (2)
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/debug/tests/StacktraceTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/discovery/tests/DiscoveryTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/generation/src/Php/ClassGenerator.php (2)
+  2  ██████████████████████████████  non-existent-class
+
+packages/generation/src/TypeScript/TypeSourceDiscovery.php (2)
+  1  ██████████████████████████████  invalid-destructuring-source
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/http-client/tests/Testing/MockClientTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/http/src/IsResponse.php (2)
+  2  ██████████████████████████████  less-specific-argument
+
+packages/http/src/Session/FormSession.php (2)
+  2  ██████████████████████████████  mixed-return-statement
+
+packages/http/src/Session/PreviousUrl.php (2)
+  2  ██████████████████████████████  mixed-return-statement
+
+packages/http/src/Session/Resolvers/HeaderSessionIdResolver.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/http/tests/StatusTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/idempotency/tests/HeartbeatRenewerTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/idempotency/tests/ObjectFingerprintGeneratorTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/idempotency/tests/ProcessingOwnerTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/intl/src/Catalog/GenericCatalog.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  property-type-coercion
+
+packages/intl/src/MessageFormat/Markup/IconMarkupFormatter.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  nullable-return-statement
+
+packages/intl/src/MessageFormatFunctionDiscovery.php (2)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/intl/src/MessageFormatMarkupDiscovery.php (2)
+  1  ██████████████████████████████  less-specific-argument
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/kv-store/src/Redis/PhpRedisClient.php (2)
+  1  ██████████████████████████████  invalid-operand
+  1  ██████████████████████████████  less-specific-argument
+
+packages/kv-store/src/Redis/RedisInsightsProvider.php (2)
+  1  ██████████████████████████████  invalid-class-string-expression
+  1  ██████████████████████████████  match-subject-type-is-never
+
+packages/mail/src/Attachment.php (2)
+  2  ██████████████████████████████  possibly-false-argument
+
+packages/mail/src/GenericMailer.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/mail/src/mail.config.php (2)
+  2  ██████████████████████████████  mixed-operand
+
+packages/mapper/src/Casters/NativeDateTimeCaster.php (2)
+  2  ██████████████████████████████  possibly-invalid-argument
+
+packages/mapper/src/Mappers/JsonFileToObjectMapper.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/mapper/src/Mappers/JsonToObjectMapper.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/mapper/src/Mappers/ObjectToArrayMapper.php (2)
+  1  ██████████████████████████████  invalid-iterator
+  1  ██████████████████████████████  mixed-array-assignment
+
+packages/process/src/Testing/InvokedTestingProcess.php (2)
+  2  ██████████████████████████████  mixed-return-statement
+
+packages/process/tests/GenericProcessExecutorTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/router/src/Exceptions/HttpExceptionHandler.php (2)
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/router/src/Exceptions/JsonExceptionRenderer.php (2)
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  possibly-null-array-access
+
+packages/router/src/PreventCrossSiteRequestsMiddleware.php (2)
+  2  ██████████████████████████████  possibly-null-argument
+
+packages/router/src/RouteConfig.php (2)
+  2  ██████████████████████████████  invalid-property-assignment-value
+
+packages/router/src/Routing/Construction/RouteMatchingRegexBuilder.php (2)
+  1  ██████████████████████████████  possibly-null-operand
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/router/src/Routing/Construction/RouteTreeNode.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  nullable-return-statement
+
+packages/router/src/Routing/Construction/RoutingTree.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  nullable-return-statement
+
+packages/router/src/SetCookieHeadersMiddleware.php (2)
+  2  ██████████████████████████████  possibly-null-argument
+
+packages/storage/src/Config/R2StorageConfig.php (2)
+  2  ██████████████████████████████  non-existent-class-like
+
+packages/storage/src/DirectoryListing.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-property
+
+packages/support/src/Arr/ImmutableArray.php (2)
+  2  ██████████████████████████████  less-specific-nested-return-statement
+
+packages/support/src/Comparison/functions.php (2)
+  2  ██████████████████████████████  possibly-null-operand
+
+packages/support/src/Html/functions.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  mixed-operand
+
+packages/support/src/Json/functions.php (2)
+  2  ██████████████████████████████  possibly-invalid-argument
+
+packages/support/src/VarExport/VarExportPhpFile.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  non-existent-method
+
+packages/support/tests/Paginator/PaginatedDataTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/support/tests/Paginator/PaginatorTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/upgrade/config/sets/level/up-to-tempest-20.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/config/sets/level/up-to-tempest-28.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/config/sets/level/up-to-tempest-30.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/config/sets/level/up-to-tempest-310.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/config/sets/level/up-to-tempest-34.php (2)
+  1  ██████████████████████████████  invalid-method-access
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest34/UpdateKernelDiscoveryPropertiesRector.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/upgrade/tests/Tempest20/Tempest20RectorTest.php (2)
+  1  ██████████████████████████████  non-existent-attribute-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/tests/Tempest20/tempest20_rector.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/upgrade/tests/Tempest28/Tempest28RectorTest.php (2)
+  1  ██████████████████████████████  non-existent-attribute-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/tests/Tempest28/tempest28_rector.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/upgrade/tests/Tempest3/Tempest3RectorTest.php (2)
+  1  ██████████████████████████████  non-existent-attribute-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/tests/Tempest3/tempest30_rector.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/upgrade/tests/Tempest310/Tempest310RectorTest.php (2)
+  1  ██████████████████████████████  non-existent-attribute-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/tests/Tempest310/tempest310_rector.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/upgrade/tests/Tempest34/Tempest34RectorTest.php (2)
+  1  ██████████████████████████████  non-existent-attribute-class
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/tests/Tempest34/tempest34_rector.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  non-existent-method
+
+packages/validation/src/Rules/HasDateTimeFormat.php (2)
+  2  ██████████████████████████████  possibly-invalid-argument
+
+packages/view/src/Components/x-input.view.php (2)
+  2  ██████████████████████████████  redundant-docblock-type
+
+packages/view/src/Elements/ElementFactory.php (2)
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-array-index
+
+packages/view/src/Elements/GenericElement.php (2)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  mixed-operand
+
+packages/view/src/Elements/PhpForeachElement.php (2)
+  1  ██████████████████████████████  possibly-invalid-argument
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/view/src/Elements/RawElement.php (2)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  mixed-operand
+
+packages/view/src/Parser/TempestViewAst.php (2)
+  2  ██████████████████████████████  missing-template-parameter
+
+packages/view/src/Parser/TempestViewParser.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/view/src/Parser/TokenCollection.php (2)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/view/src/ViewCachePool.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/view/tests/StandaloneViewRendererTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/view/tests/TempestViewLexerTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+packages/vite/src/Installer/ViteInstaller.php (2)
+  1  ██████████████████████████████  invalid-argument
+  1  ██████████████████████████████  invalid-array-element
+
+packages/vite/src/Manifest/Manifest.php (2)
+  2  ██████████████████████████████  less-specific-argument
+
+src/Tempest/Framework/Testing/TestingDatabaseInitializer.php (2)
+  2  ██████████████████████████████  possibly-null-array-index
+
+tests/Fixtures/Models/AWithVirtual.php (2)
+  1  ██████████████████████████████  invalid-return-statement
+  1  ██████████████████████████████  possibly-invalid-operand
+
+tests/Integration/Console/Commands/CompletionGenerateCommandTest.php (2)
+  2  ██████████████████████████████  unused-property
+
+tests/Integration/Console/Input/ConsoleArgumentDefinitionTest.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Console/RenderConsoleCommandTest.php (2)
+  2  ██████████████████████████████  unused-property
+
+tests/Integration/Core/ExceptionProcessorTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Core/ExceptionTesterTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Core/InstallCommandTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Commands/MakeMigrationCommandTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Database/ConvenientDateWhereMethodsTest.php (2)
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Database/MultiDatabaseTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Database/QueryExecutedTest.php (2)
+  1  ██████████████████████████████  unused-method
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Http/Exceptions/ExceptionRendererTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Http/SessionInstallerTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Log/GenericLoggerTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Mapper/Fixtures/DoubleStringSerializer.php (2)
+  2  ██████████████████████████████  mixed-operand
+
+tests/Integration/Mapper/Fixtures/InterfaceValueSerializer.php (2)
+  1  ██████████████████████████████  mixed-method-access
+  1  ██████████████████████████████  mixed-operand
+
+tests/Integration/Mapper/MapperContextTest.php (2)
+  1  ██████████████████████████████  falsable-return-statement
+  1  ██████████████████████████████  invalid-return-statement
+
+tests/Integration/Route/ClientTest.php (2)
+  2  ██████████████████████████████  unused-property
+
+tests/Integration/Validator/TranslationsTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/Integration/Vite/HasFixtures.php (2)
+  1  ██████████████████████████████  mixed-return-statement
+  1  ██████████████████████████████  possibly-false-argument
+
+tests/Integration/Vite/ViteInstallerTest.php (2)
+  2  ██████████████████████████████  unused-method
+
+tests/PHPStan/QueryFunctionDynamicReturnTypeExtension.php (2)
+  1  ██████████████████████████████  non-existent-class-like
+  1  ██████████████████████████████  unused-property
+
+packages/auth/src/AccessControl/PolicyDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/auth/src/AuthenticatableDiscovery.php (1)
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/auth/src/Authentication/DatabaseAuthenticatableResolver.php (1)
+  1  ██████████████████████████████  less-specific-return-statement
+
+packages/auth/tests/AuthenticationAndOAuthSafetyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cache/src/Testing/CacheTester.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/cache/src/Testing/RestrictedCache.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/clock/tests/GenericClockTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/clock/tests/MockClockTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/command-bus/src/CommandBusMiddlewareDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/console/src/Actions/BuildCompletionMetadata.php (1)
+  1  ██████████████████████████████  possibly-static-access-on-interface
+
+packages/console/src/Actions/CompleteConsoleCommandNames.php (1)
+  1  ██████████████████████████████  less-specific-argument
+
+packages/console/src/Actions/PromptForConsoleInput.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Actions/RenderConsoleCommand.php (1)
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/console/src/Commands/ScheduleRunCommand.php (1)
+  1  ██████████████████████████████  incompatible-property-visibility
+
+packages/console/src/Commands/ScheduleTaskCommand.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Completion/CompletionCommand.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/console/src/Components/Concerns/RendersControls.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Components/Renderers/ConfirmRenderer.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/console/src/Components/Renderers/InstructionsRenderer.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Components/Renderers/MessageRenderer.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/console/src/Components/Renderers/RendersInput.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/Components/Static/StaticProgressBarComponent.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/console/src/ConsoleMiddlewareCallable.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/console/src/Discovery/ConsoleCommandDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/console/src/Discovery/ConsoleMiddlewareDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/console/src/Discovery/ScheduleDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/console/src/Exceptions/InvalidEnumArgument.php (1)
+  1  ██████████████████████████████  possibly-static-access-on-interface
+
+packages/console/src/GlobalFlags.php (1)
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/console/src/Highlight/ConsoleTokenType.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/LogLanguage/LogLanguage.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/CodeInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/DynamicInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/EmphasizeInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/FileInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/LinkInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/MarkInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/StrongInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/Injections/UnderlineInjection.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TempestConsoleLanguage/TempestConsoleLanguage.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/TextTerminalTheme.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Highlight/VarExportLanguage/VarExportLanguage.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/src/Input/ConsoleInputArgument.php (1)
+  1  ██████████████████████████████  reference-to-undefined-variable
+
+packages/console/src/Scheduler/GenericScheduler.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/console/src/Terminal/TerminalCursor.php (1)
+  1  ██████████████████████████████  reference-to-undefined-variable
+
+packages/console/tests/TempestConsoleLanguage/Injections/DynamicInjectionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/tests/TempestConsoleLanguage/Injections/FileInjectionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/tests/TempestConsoleLanguage/Injections/LinkInjectionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/console/tests/TextBufferTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/container/src/AutowireDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/container/src/Container.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/container/src/DecoratorDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/container/src/InitializerDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/container/src/ResettableDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/container/tests/Exceptions/CannotAutowireExceptionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/container/tests/Exceptions/CircularDependencyExceptionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/container/tests/Fixtures/CircularWithInitializerBInitializer.php (1)
+  1  ██████████████████████████████  too-many-arguments
+
+packages/container/tests/Fixtures/SlowDependency.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/core/src/AppConfig.php (1)
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/core/src/Commands/DiscoveryGenerateCommand.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/core/src/ConfigCacheInitializer.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/core/src/Exceptions/ExceptionReporterDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/core/src/InsightsProviderDiscovery.php (1)
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/core/src/InstallerDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/core/src/Kernel/FinishDeferredTasks.php (1)
+  1  ██████████████████████████████  less-specific-argument
+
+packages/core/src/Tempest.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+packages/core/tests/EnvironmentTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cryptography/src/Timelock.php (1)
+  1  ██████████████████████████████  possibly-undefined-variable
+
+packages/cryptography/tests/Encryption/EncryptionKeyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cryptography/tests/Password/PasswordHasherTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cryptography/tests/Signing/SignerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/cryptography/tests/TimelockTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/src/Builder/QueryBuilders/SupportsJoins.php (1)
+  1  ██████████████████████████████  unused-template-parameter
+
+packages/database/src/Builder/QueryBuilders/SupportsRelations.php (1)
+  1  ██████████████████████████████  unused-template-parameter
+
+packages/database/src/Casters/DataTransferObjectCaster.php (1)
+  1  ██████████████████████████████  incompatible-parameter-name
+
+packages/database/src/Casters/EncryptedCaster.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/database/src/Exceptions/QueryWasInvalid.php (1)
+  1  ██████████████████████████████  implicit-to-string-cast
+
+packages/database/src/QueryStatements/CanExecuteStatement.php (1)
+  1  ██████████████████████████████  non-existent-method
+
+packages/database/src/QueryStatements/CreateTableStatement.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/database/src/QueryStatements/IndexStatement.php (1)
+  1  ██████████████████████████████  implicit-to-string-cast
+
+packages/database/src/QueryStatements/SetStatement.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/database/src/QueryStatements/UniqueStatement.php (1)
+  1  ██████████████████████████████  implicit-to-string-cast
+
+packages/database/src/QueryStatements/WhereExistsStatement.php (1)
+  1  ██████████████████████████████  invalid-parameter-default-value
+
+packages/database/src/SeederDiscovery.php (1)
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/database/src/Serializers/BooleanSerializer.php (1)
+  1  ██████████████████████████████  incompatible-parameter-name
+
+packages/database/src/Serializers/DateTimeSerializer.php (1)
+  1  ██████████████████████████████  incompatible-parameter-name
+
+packages/database/src/Serializers/RawSqlBooleanSerializer.php (1)
+  1  ██████████████████████████████  incompatible-parameter-name
+
+packages/database/src/Serializers/RawSqlDateTimeSerializer.php (1)
+  1  ██████████████████████████████  incompatible-parameter-name
+
+packages/database/tests/Config/DatabaseConfigTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/DatabaseInsightsProviderTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/GenericDatabaseTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/GenericTransactionManagerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/Migrations/TableGuesserTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/PDOConnectionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/CharStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/CountStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/CreateTableStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/DateStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/DeleteStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/FieldStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/InsertStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/JoinStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/SelectStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/UpdateStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/QueryStatements/UuidPrimaryKeyStatementTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/Serializers/BooleanSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/Serializers/PrimaryKeySerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/Tables/PascalCaseStrategyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/database/tests/Tables/PluralizedSnakeCaseStrategyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/src/Duration.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/datetime/src/TemporalConvenienceMethods.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/datetime/tests/DateTimeTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/DurationTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/EraTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/Exception/InvalidArgumentExceptionTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/FormatPatternTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/IsLeapYearTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/MeridiemTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/MonthTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/SecondsStyleTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/TimestampTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/TimezoneTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/datetime/tests/WeekdayTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/debug/src/Stacktrace/Stacktrace.php (1)
+  1  ██████████████████████████████  invalid-operand
+
+packages/discovery/src/DiscoveryDiscovery.php (1)
+  1  ██████████████████████████████  mixed-property-type-coercion
+
+packages/discovery/src/DiscoveryLocation.php (1)
+  1  ██████████████████████████████  invalid-property-assignment-value
+
+packages/discovery/src/GenerateDiscoveryCache.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/discovery/src/SkipDiscovery.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/discovery/tests/Fixtures/ContainerWithoutAutowiring.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/discovery/tests/Fixtures/MyDiscoveryClass.php (1)
+  1  ██████████████████████████████  property-type-coercion
+
+packages/event-bus/src/EventBusConfig.php (1)
+  1  ██████████████████████████████  invalid-argument
+
+packages/event-bus/src/EventBusMiddlewareDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/event-bus/tests/EventBusTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/generation/src/Php/DataObjects/StubFile.php (1)
+  1  ██████████████████████████████  non-existent-catch-type
+
+packages/generation/tests/MatchesSnapshots.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/generation/tests/Php/ClassGeneratorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/generation/tests/Php/ClassManipulatorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/generation/tests/TypeScript/Fixtures/EnumMetadataTypeResolver.php (1)
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/http-client/tests/Testing/ResponseBagTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/http/src/ContentType.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+packages/http/src/Cookie/CookieManager.php (1)
+  1  ██████████████████████████████  possibly-null-operand
+
+packages/http/src/Responses/EventStream.php (1)
+  1  ██████████████████████████████  yield-from-non-iterable
+
+packages/http/src/Session/Installer/SessionInstaller.php (1)
+  1  ██████████████████████████████  possibly-null-array-index
+
+packages/http/src/Session/Managers/FileSessionManager.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/http/src/Session/Resolvers/CookieSessionIdResolver.php (1)
+  1  ██████████████████████████████  non-existent-method
+
+packages/http/src/Status.php (1)
+  1  ██████████████████████████████  avoid-catching-error
+
+packages/http/tests/GenericRequestTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/http/tests/Responses/CreatedResponseTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/icon/src/IconCacheInitializer.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/idempotency/src/Fingerprint/ObjectFingerprintGenerator.php (1)
+  1  ██████████████████████████████  invalid-type-cast
+
+packages/idempotency/src/Store/StoredResponse.php (1)
+  1  ██████████████████████████████  less-specific-argument
+
+packages/idempotency/src/SupportedMethod.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/intl/src/Catalog/CatalogInitializer.php (1)
+  1  ██████████████████████████████  non-existent-method
+
+packages/intl/src/IntlConfig.php (1)
+  1  ██████████████████████████████  invalid-property-assignment-value
+
+packages/intl/src/MessageFormat/Functions/NumberFunction.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+packages/intl/src/MessageFormat/Parser/Node/Expression/FunctionExpression.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/intl/src/MessageFormat/Parser/Node/Expression/LiteralExpression.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/intl/src/MessageFormat/Parser/Node/Expression/VariableExpression.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/intl/src/Number/functions.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/intl/src/TranslationMessageDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/intl/src/functions.php (1)
+  1  ██████████████████████████████  possible-method-access-on-null
+
+packages/intl/tests/CurrencyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/intl/tests/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/intl/tests/GenericCatalogTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/intl/tests/InflectorPluralizerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/intl/tests/ParserTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/intl/tests/PluralRulesMatcherTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/kv-store/src/Redis/RedisExtensionWasMissing.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/log/src/Logger.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/log/tests/LogLevelTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/mail/src/MailerConfig.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/mail/src/Testing/TestingMailer.php (1)
+  1  ██████████████████████████████  non-existent-class
+
+packages/mapper/src/Attributes/Context.php (1)
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/mapper/src/CasterDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/mapper/src/Casters/JsonToArrayCaster.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/mapper/src/Exceptions/MappingValuesWereMissing.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/mapper/src/MapperDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/mapper/src/Mappers/JsonToArrayMapper.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/mapper/src/SerializationMapDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/mapper/src/SerializerDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/mapper/src/Serializers/NativeDateTimeSerializer.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/mapper/src/Serializers/SerializableSerializer.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/process/src/Testing/InvokedProcessDescription.php (1)
+  1  ██████████████████████████████  mixed-method-access
+
+packages/process/src/Testing/ProcessExecutionWasForbidden.php (1)
+  1  ██████████████████████████████  invalid-type-cast
+
+packages/process/tests/PoolTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/ClassReflectorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/EnumReflectorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/Fixtures/HasAttributeTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/FunctionReflectorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/MethodReflectorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/ReflectionTypeTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/reflection/tests/TypeReflectorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/router/src/Commands/MakeControllerCommand.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/router/src/Commands/RoutesCommand.php (1)
+  1  ██████████████████████████████  redundant-docblock-type
+
+packages/router/src/ExceptionRendererDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/router/src/HandleRouteSpecificMiddleware.php (1)
+  1  ██████████████████████████████  mixed-method-access
+
+packages/router/src/HttpMiddlewareCallable.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/router/src/HttpMiddlewareDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/router/src/ResponseProcessorDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/router/src/RouteDiscovery.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/router/src/Routing/Construction/DiscoveredRoute.php (1)
+  1  ██████████████████████████████  invalid-return-statement
+
+packages/router/src/Routing/Matching/MatchingRegex.php (1)
+  1  ██████████████████████████████  possibly-undefined-variable
+
+packages/router/src/Static/StaticCleanCommand.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+packages/router/src/Static/StaticPageDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/router/tests/OptionalParametersTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/router/tests/RouteConfigTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/router/tests/Routing/Construction/RoutingTreeTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/storage/src/Testing/RestrictedStorageInitializer.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/storage/src/Testing/StorageTester.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/support/src/Arr/MutableArray.php (1)
+  1  ██████████████████████████████  less-specific-nested-return-statement
+
+packages/support/src/Uri/Uri.php (1)
+  1  ██████████████████████████████  reference-to-undefined-variable
+
+packages/support/tests/Arr/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Arr/ImmutableArrayTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Arr/ManipulatesArrayTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Arr/MutableArrayTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Arr/ToArrayTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Arr/WrapTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Conditions/HasConditionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Fixtures/Enums/EmptyEnum.php (1)
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/support/tests/Fixtures/Enums/SampleIntegerBackedEnum.php (1)
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/support/tests/Fixtures/Enums/SampleStatusBackedEnum.php (1)
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/support/tests/Fixtures/Enums/SampleStatusPureEnum.php (1)
+  1  ██████████████████████████████  missing-template-parameter
+
+packages/support/tests/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Html/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Html/HtmlStringTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/IsEnumHelperTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/JavaScript/PackageManagerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Json/JsonTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Math/MathsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Namespace/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Path/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Path/PathTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Random/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Regex/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Str/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Str/ManipulatesStringTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Uri/FunctionsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/support/tests/Uri/UriTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest2/MigrationRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest2/RemoveDatabaseMigrationImportRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest2/RemoveIdImportRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest2/UpdateUriImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest28/WriteableRouteRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateArrMapFunctionRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateCommandFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateContainerFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateEventFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateExceptionProcessorRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateHasContextRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateMapperFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateReflectionFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest3/UpdateViewFunctionImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest310/UpdatePriorityImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/upgrade/src/Tempest34/UpdateDiscoveryImportsRector.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/src/Rules/Exists.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/validation/src/Rules/IsFloat.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/validation/src/Rules/IsInteger.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/validation/src/Rules/ValidateWith.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+packages/validation/tests/Rules/AfterDateTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/DivisibleByTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/DoesNotEndWithTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/DoesNotStartWithTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/EndsWithTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/ExistsTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/HasCountTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/HasDateTimeFormatTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/HasLengthTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsAlphaNumericTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsAlphaTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsArrayListTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsBeforeDateTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsBetweenDatesTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsBetweenTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsBooleanTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsEmailTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsEnumTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsEvenNumberTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsFalsyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsFloatTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsHexColorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsIPTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsIPv4Test.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsIPv6Test.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsInTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsIntegerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsJsonStringTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsLowercaseTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsMacAddressTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsMultipleOfTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsNotEmptyStringTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsNotInTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsOddNumberTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsPasswordTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsPhoneNumberTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsStringTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsTimeTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsTimezoneTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsTruthyTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsUlidTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsUnixTimestampTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsUppercaseTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsUrlTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/IsUuidTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/MatchesRegExTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/StartsWithTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/Rules/ValidateWithTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/validation/tests/ValidatorTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/view/src/Attributes/ExpressionAttribute.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+packages/view/src/Elements/PhpElement.php (1)
+  1  ██████████████████████████████  reference-to-undefined-variable
+
+packages/view/src/Elements/RootElement.php (1)
+  1  ██████████████████████████████  less-specific-nested-return-statement
+
+packages/view/src/Export/ViewObjectExporter.php (1)
+  1  ██████████████████████████████  possibly-invalid-argument
+
+packages/view/src/Initializers/ViewCacheInitializer.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+packages/view/src/ViewComponent.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+packages/view/src/ViewComponentDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/view/src/ViewConfig.php (1)
+  1  ██████████████████████████████  invalid-property-assignment-value
+
+packages/view/src/ViewProcessorDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/view/tests/Fixtures/standalone-error-slot-usage.view.php (1)
+  1  ██████████████████████████████  non-existent-function
+
+packages/view/tests/Fixtures/standalone-error.view.php (1)
+  1  ██████████████████████████████  non-existent-function
+
+packages/view/tests/Fixtures/standalone-undefined-variable.view.php (1)
+  1  ██████████████████████████████  undefined-variable
+
+packages/view/tests/Fixtures/x-standalone-error-component.view.php (1)
+  1  ██████████████████████████████  non-existent-function
+
+packages/view/tests/TempestViewParserTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/view/tests/TokenTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+packages/vite/src/TagCompiler/GenericTagCompiler.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+packages/vite/src/TagsResolver/DevelopmentTagsResolver.php (1)
+  1  ██████████████████████████████  mixed-method-access
+
+packages/vite/src/ViteDiscovery.php (1)
+  1  ██████████████████████████████  invalid-destructuring-source
+
+packages/vite/src/x-vite-tags.view.php (1)
+  1  ██████████████████████████████  less-specific-nested-argument-type
+
+src/Tempest/Framework/Commands/MigrateUpCommand.php (1)
+  1  ██████████████████████████████  invalid-return-statement
+
+src/Tempest/Framework/Testing/IntegrationTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+src/Tempest/Framework/Testing/ModelFactoryCollection.php (1)
+  1  ██████████████████████████████  mixed-method-access
+
+tests/Benchmark/Extension/MarkdownExtension.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Benchmark/Extension/MarkdownRendererTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Fixtures/Config/database.sqlite.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+tests/Fixtures/Controllers/HeaderWithUnderscoresController.php (1)
+  1  ██████████████████████████████  possibly-null-argument
+
+tests/Fixtures/Modules/Home/HomeController.php (1)
+  1  ██████████████████████████████  non-existent-method
+
+tests/Integration/Auth/AccessControl/HasPolicyTests.php (1)
+  1  ██████████████████████████████  less-specific-argument
+
+tests/Integration/Auth/Authentication/CurrentAuthenticatableTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/CommandBus/AsyncCommandTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Console/Components/Static/StaticSearchComponentTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Console/Fixtures/ArrayInputCommand.php (1)
+  1  ██████████████████████████████  possibly-false-argument
+
+tests/Integration/Console/Fixtures/LoggerCommand.php (1)
+  1  ██████████████████████████████  non-existent-method
+
+tests/Integration/Console/Highlight/LogLanguage/LogLanguageTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Console/Input/ConsoleInputArgumentTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Console/Scheduler/EveryTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Console/Scheduler/HandlerInvocationTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Container/TaggedDynamicInitializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Core/ComposerTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Core/Config/LoadConfigTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Core/DiscoveryCacheTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Core/KernelTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Core/MiddlewareTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Core/ViewComponentsInstallerTest.php (1)
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Database/Builder/InsertQueryBuilderTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Builder/SelectQueryBuilderTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Builder/WhereHasInWhereGroupTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Builder/WhereHasTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/ConvenientWhereMethodsTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/GroupedWhereMethodsTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Mappers/SelectModelMapperTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/MigrationManagerTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/QueryStatements/AlterTableStatementTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Database/Testing/DatabaseTesterTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Framework/Commands/MigrateValidateCommandTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Http/CookieHandlingTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Http/Exceptions/HttpExceptionHandlerTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Http/HeaderSessionIdResolverTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Icon/IconTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/IntegrationTestCase.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mailer/SentEmailTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Mapper/Fixtures/InterfaceValueCaster.php (1)
+  1  ██████████████████████████████  mixed-operand
+
+tests/Integration/Mapper/Fixtures/ObjectFactoryACaster.php (1)
+  1  ██████████████████████████████  mixed-return-statement
+
+tests/Integration/Mapper/Serializers/ArrayToJsonSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/BooleanSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/DateTimeSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/EnumSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/FloatSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/IntegerSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/NativeDateTimeSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/SerializableSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Mapper/Serializers/StringSerializerTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Router/PreventCrossSiteRequestsMiddlewareTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Storage/MultipleStoragesTest.php (1)
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Support/ArrayMutabilityTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Support/DependencyInstallerTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Testing/Http/TestResponseHelperTest.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
+tests/Integration/Validator/ExistsRuleTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/View/ElementFactoryTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/View/Fixtures/stacktrace-standalone-error.view.php (1)
+  1  ██████████████████████████████  non-existent-function
+
+tests/Integration/View/Fixtures/x-stacktrace-error-component.view.php (1)
+  1  ██████████████████████████████  non-existent-function
+
+tests/Integration/View/ViewCacheTest.php (1)
+  1  ██████████████████████████████  unused-property
+
+tests/Integration/Vite/FunctionsTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/Integration/Vite/GenericTagCompilerTest.php (1)
+  1  ██████████████████████████████  unused-method
+
+tests/PHPStan/LazyReadWritePropertiesExtension.php (1)
+  1  ██████████████████████████████  non-existent-class-like
+
