@@ -93,7 +93,7 @@ final class TestResponseHelper
 
         Assert::assertContains(
             $value,
-            $header?->values,
+            $header->values,
             sprintf('Failed to assert that response header [%s] value contains [%s]. These header values were found: %s', $name, $value, $headerString),
         );
 
@@ -110,7 +110,7 @@ final class TestResponseHelper
         $header = $this->response->getHeader($name);
         $headerString = var_export($header, return: true);
 
-        foreach ($header?->values as $value) {
+        foreach ($header->values as $value) {
             try {
                 Assert::assertStringMatchesFormat($format, $value);
 
@@ -213,7 +213,7 @@ final class TestResponseHelper
     {
         /** @var array<string,Cookie> */
         $cookies = Arr\map_with_keys(
-            array: $this->response->getHeader('set-cookie')?->values,
+            array: $this->response->getHeader('set-cookie')->values,
             map: function (string $cookie) {
                 $cookie = Cookie::createFromString($cookie);
                 yield $cookie->key => $cookie;
@@ -415,7 +415,7 @@ final class TestResponseHelper
      */
     public function assertViewData(string $key, ?Closure $callback = null): self
     {
-        $data = $this->body?->data;
+        $data = $this->body->data;
         $value = $data[$key];
 
         Assert::assertArrayHasKey(
@@ -442,7 +442,7 @@ final class TestResponseHelper
      */
     public function assertViewDataMissing(string $key): self
     {
-        $data = $this->body?->data;
+        $data = $this->body->data;
 
         Assert::assertArrayNotHasKey(
             key: $key,
@@ -463,7 +463,7 @@ final class TestResponseHelper
      */
     public function assertViewDataAll(Closure $callback): self
     {
-        $data = $this->body?->data;
+        $data = $this->body->data;
 
         if ($callback($data) === false) {
             Assert::fail('Failed validating all view data');
@@ -486,7 +486,7 @@ final class TestResponseHelper
 
         Assert::assertEquals(
             expected: $view,
-            actual: $this->body?->path,
+            actual: $this->body->path,
         );
 
         return $this;
