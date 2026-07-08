@@ -393,9 +393,9 @@ final class TestingOAuthClientTest extends FrameworkIntegrationTestCase
                         'email' => $user->email ?? '',
                         'full_name' => $user->name ?? '',
                         'username' => $user->nickname ?? '',
-                    ]
+                    ],
                 );
-            }
+            },
         );
 
         $this->assertInstanceOf(AccessToken::class, $receivedToken);
