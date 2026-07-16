@@ -2,7 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
-## [3.14.0](https://github.com/tempestphp/tempest-framework/compare/v3.13.2..3.14.0)  —  2026-07-07
+## [3.14.3](https://github.com/tempestphp/tempest-framework/compare/v3.14.2..3.14.3)  —  2026-07-15
+
+### 🚨 Breaking changes
+
+- **router**: [**breaking**] block all cross-site unsafe requests when using `PreventCrossSiteRequestsMiddleware` (#2210) ([64a5186](https://github.com/tempestphp/tempest-framework/commit/64a5186a4b49ebef8c881aa4a2ab222435f5b89f))
+
+
+## [3.14.2](https://github.com/tempestphp/tempest-framework/compare/v3.14.1..v3.14.2)  —  2026-07-15
+
+### 🚀 Features
+
+- **command-bus**: support async command handlers (#2208) ([a76b3d9](https://github.com/tempestphp/tempest-framework/commit/a76b3d9fb427de7a454dd70e08fb14ef9d5dac53))
+- **validation**: include error messages in ValidationFailed exception message (#2203) ([a919dec](https://github.com/tempestphp/tempest-framework/commit/a919dec4b485a217888badd16ee5b5b307a1cf53))
+
+### 🐛 Bug fixes
+
+- **view**: escape resolved expression attribute values (#2209) ([28218fb](https://github.com/tempestphp/tempest-framework/commit/28218fb63759bc2a359b3180b16bf8750a1775a8))
+
+
+## [3.14.1](https://github.com/tempestphp/tempest-framework/compare/v3.14.0..v3.14.1)  —  2026-07-08
+
+### 🐛 Bug fixes
+
+- **router**: make exception page render in sandboxed/insecure environments (#2200) ([183ee19](https://github.com/tempestphp/tempest-framework/commit/183ee1994d6616c2dcd0f8dbd4890d21da26c9ff))
+
+
+## [3.14.0](https://github.com/tempestphp/tempest-framework/compare/v3.13.2..v3.14.0)  —  2026-07-07
 
 ### 🚨 Breaking changes
 
