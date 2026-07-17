@@ -324,7 +324,7 @@ final class UriTest extends TestCase
 
         $uri = Uri::from('http://example.com:80/path');
         $this->assertNull($uri->port);
-        $this->assertSame('https://example.com/path', $uri->toString());
+        $this->assertSame('http://example.com/path', $uri->toString());
     }
 
     #[Test]
