@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
-## [3.16.0](https://github.com/tempestphp/tempest-framework/compare/v3.15.0..3.16.0)  —  2026-07-17
+## [3.16.1](https://github.com/tempestphp/tempest-framework/compare/v3.16.0..3.16.1)  —  2026-07-17
+
+### ⚡ Performance
+
+- **view**: improve lexer performance (#2216) ([4afc6c5](https://github.com/tempestphp/tempest-framework/commit/4afc6c5e115ca0bde0eff3614e2e5bf5f303203a))
+
+### 🐛 Bug fixes
+
+- **cryptography**: support php builds without argon2 (#2165) ([45702e5](https://github.com/tempestphp/tempest-framework/commit/45702e5d8a4af789ac93cf0549f0fdac3a15d562))
+- **validation**: support ImmutableArray/MutableArray in IsArrayList rule (#2223) ([27bfcfd](https://github.com/tempestphp/tempest-framework/commit/27bfcfd55b635741f187dd0b3a055bef80e9042b))
+
+
+## [3.16.0](https://github.com/tempestphp/tempest-framework/compare/v3.15.0..v3.16.0)  —  2026-07-17
 
 ### 🚀 Features
 
