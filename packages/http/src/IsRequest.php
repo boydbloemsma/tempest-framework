@@ -6,6 +6,7 @@ namespace Tempest\Http;
 
 use Tempest\Http\Cookie\Cookie;
 use Tempest\Http\Session\Session;
+use Tempest\Support\Uri;
 use Tempest\Validation\SkipValidation;
 
 use function Tempest\Container\get;
@@ -96,21 +97,12 @@ trait IsRequest
 
     private function resolvePath(): string
     {
-        $decodedUri = rawurldecode($this->uri);
-        $parsedUrl = parse_url($decodedUri);
-
-        return $parsedUrl['path'] ?? '';
+        return rawurldecode(Uri\get_path($this->uri) ?? '');
     }
 
     private function resolveQuery(): array
     {
-        $decodedUri = rawurldecode($this->uri);
-        $parsedUrl = parse_url($decodedUri);
-        $queryString = $parsedUrl['query'] ?? '';
-
-        parse_str($queryString, $query);
-
-        return $query;
+        return Uri\get_query($this->uri);
     }
 
     public function has(string $key): bool

@@ -8,8 +8,7 @@ use Stringable;
 use Tempest\Support\Str;
 use Tempest\Support\Str\ImmutableString;
 use Tempest\Support\Str\MutableString;
-
-use function parse_url;
+use Uri\WhatWg\Url;
 
 final class Uri implements Stringable
 {
@@ -67,21 +66,47 @@ final class Uri implements Stringable
      */
     public static function from(string $uri): self
     {
-        $parts = parse_url($uri);
+        $url = Url::parse($uri);
 
-        if ($parts === false) {
+        if ($url instanceof Url) {
+            return new self(
+                scheme: $url->getScheme(),
+                user: $url->getUsername(),
+                password: $url->getPassword() === '' ? null : $url->getPassword(),
+                host: $url->getAsciiHost(),
+                port: $url->getPort(),
+                path: $url->getPath() ?: null,
+                queryString: $url->getQuery(),
+                fragment: $url->getFragment(),
+            );
+        }
+
+        $url = Url::parse($uri, new Url('http://localhost'));
+
+        if (! $url instanceof Url) {
             return new self(path: $uri);
         }
 
+        if (str_starts_with($uri, '//')) {
+            return new self(
+                user: $url->getUsername(),
+                password: $url->getPassword() === '' ? null : $url->getPassword(),
+                host: $url->getAsciiHost(),
+                port: $url->getPort(),
+                path: $url->getPath() ?: null,
+                queryString: $url->getQuery(),
+                fragment: $url->getFragment(),
+            );
+        }
+
+        $path = str_starts_with($uri, '/')
+            ? $url->getPath()
+            : Str\strip_start($url->getPath(), '/');
+
         return new self(
-            scheme: $parts['scheme'] ?? null,
-            user: $parts['user'] ?? null,
-            password: $parts['pass'] ?? null,
-            host: $parts['host'] ?? null,
-            port: $parts['port'] ?? null,
-            path: $parts['path'] ?? null,
-            queryString: $parts['query'] ?? null,
-            fragment: $parts['fragment'] ?? null,
+            path: $path === '' ? null : $path,
+            queryString: $url->getQuery(),
+            fragment: $url->getFragment(),
         );
     }
 
