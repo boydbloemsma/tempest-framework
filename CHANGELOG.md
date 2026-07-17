@@ -2,7 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
-## [3.15.0](https://github.com/tempestphp/tempest-framework/compare/v3.14.3..3.15.0)  —  2026-07-16
+## [3.16.0](https://github.com/tempestphp/tempest-framework/compare/v3.15.0..3.16.0)  —  2026-07-17
+
+### 🚀 Features
+
+- **auth**: support refreshing OAuth access tokens (#2204) ([5d3fd62](https://github.com/tempestphp/tempest-framework/commit/5d3fd6289aa9d70598720c9650b5f6c859aa9361))
+- **validation**: support skipping missing properties (#2220) ([4402d14](https://github.com/tempestphp/tempest-framework/commit/4402d14255b4ec1b4115c7f2b6e5e879493dd6c1))
+
+### 🐛 Bug fixes
+
+- **database**: improved hooked property support (#2221) ([84e426e](https://github.com/tempestphp/tempest-framework/commit/84e426e13fc55e0f8e1c1b30994261548357c8cf))
+- preserve null array-access values (#2219) ([f796eee](https://github.com/tempestphp/tempest-framework/commit/f796eee38ef458a3cf25a60be5adbf316d0dc5f0))
+
+
+## [3.15.0](https://github.com/tempestphp/tempest-framework/compare/v3.14.3..v3.15.0)  —  2026-07-16
 
 ### 🚀 Features
 
