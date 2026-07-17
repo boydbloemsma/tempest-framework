@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [3.16.1](https://github.com/tempestphp/tempest-framework/compare/v3.16.0..3.16.1)  —  2026-07-17
+## [3.16.2](https://github.com/tempestphp/tempest-framework/compare/v3.16.1..3.16.2)  —  2026-07-17
+
+### 🐛 Bug fixes
+
+- **view**: lexer source mapping (#2225) ([925a280](https://github.com/tempestphp/tempest-framework/commit/925a280a251842a83699cb2f0c38d59909dbb7fc))
+
+
+## [3.16.1](https://github.com/tempestphp/tempest-framework/compare/v3.16.0..v3.16.1)  —  2026-07-17
 
 ### ⚡ Performance
 
