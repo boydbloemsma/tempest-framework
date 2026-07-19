@@ -88,11 +88,13 @@ final class Uri implements Stringable
         }
 
         if (str_starts_with($uri, '//')) {
+            $httpsUrl = Url::parse($uri, new Url('https://localhost'));
+
             return new self(
                 user: $url->getUsername(),
                 password: $url->getPassword() === '' ? null : $url->getPassword(),
                 host: $url->getAsciiHost(),
-                port: $url->getPort(),
+                port: $url->getPort() ?? $httpsUrl?->getPort(),
                 path: $url->getPath() ?: null,
                 queryString: $url->getQuery(),
                 fragment: $url->getFragment(),

@@ -376,4 +376,25 @@ final class UriTest extends TestCase
         $this->assertSame('end', $uri->fragment);
         $this->assertSame('#end', $uri->toString());
     }
+
+    #[Test]
+    public function protocol_relative_uri_preserves_explicit_default_ports(): void
+    {
+        $uri = Uri::from('//example.com:80/path');
+        $this->assertSame(80, $uri->port);
+        $this->assertSame('//example.com:80/path', (string) $uri);
+
+        $uri = Uri::from('//example.com:443/path');
+        $this->assertSame(443, $uri->port);
+
+        $this->assertSame(80, Uri::from('//example.com:80/path')->withScheme('https')->port);
+    }
+
+    #[Test]
+    public function protocol_relative_uri_normalizes_unicode_host_and_keeps_port(): void
+    {
+        $uri = Uri::from('//bücher.example:80/path');
+        $this->assertSame('xn--bcher-kva.example', $uri->host);
+        $this->assertSame(80, $uri->port);
+    }
 }
