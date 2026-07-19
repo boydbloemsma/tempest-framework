@@ -66,9 +66,9 @@ final class Uri implements Stringable
      */
     public static function from(string $uri): self
     {
-        $url = Url::parse($uri);
+        $canBeAbsolute = $uri !== '' && $uri !== '*' && ! str_contains('/?#', $uri[0]);
 
-        if ($url instanceof Url) {
+        if ($canBeAbsolute && ($url = Url::parse($uri)) instanceof Url) {
             return new self(
                 scheme: $url->getScheme(),
                 user: $url->getUsername(),
@@ -81,14 +81,18 @@ final class Uri implements Stringable
             );
         }
 
-        $url = Url::parse($uri, new Url('http://localhost'));
+        static $baseUrl = null;
+
+        $url = Url::parse($uri, $baseUrl ??= new Url('http://localhost'));
 
         if (! $url instanceof Url) {
             return new self(path: $uri);
         }
 
         if (str_starts_with($uri, '//')) {
-            $httpsUrl = Url::parse($uri, new Url('https://localhost'));
+            static $secureBaseUrl = null;
+
+            $httpsUrl = Url::parse($uri, $secureBaseUrl ??= new Url('https://localhost'));
 
             return new self(
                 user: $url->getUsername(),

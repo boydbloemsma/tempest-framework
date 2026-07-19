@@ -6,7 +6,7 @@ namespace Tempest\Http;
 
 use Tempest\Http\Cookie\Cookie;
 use Tempest\Http\Session\Session;
-use Tempest\Support\Uri;
+use Tempest\Support\Uri\Uri;
 use Tempest\Validation\SkipValidation;
 
 use function Tempest\Container\get;
@@ -65,8 +65,9 @@ trait IsRequest
         $this->files = $files;
         $this->raw = $raw;
 
-        $this->path ??= $this->resolvePath();
-        $this->query ??= $this->resolveQuery();
+        $uri = Uri::from($this->uri);
+        $this->path ??= rawurldecode($uri->path ?? '');
+        $this->query ??= $uri->query;
     }
 
     public function get(string $key, mixed $default = null): mixed
@@ -93,16 +94,6 @@ trait IsRequest
     public function getCookie(string $name): ?Cookie
     {
         return $this->cookies[$name] ?? null;
-    }
-
-    private function resolvePath(): string
-    {
-        return rawurldecode(Uri\get_path($this->uri) ?? '');
-    }
-
-    private function resolveQuery(): array
-    {
-        return Uri\get_query($this->uri);
     }
 
     public function has(string $key): bool
