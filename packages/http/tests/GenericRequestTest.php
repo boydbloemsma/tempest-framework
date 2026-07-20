@@ -192,6 +192,7 @@ final class GenericRequestTest extends TestCase
         $this->assertSame([], $request->query);
     }
 
+    #[Test]
     public function accepts_returns_true_on_first_match(): void
     {
         $request = new GenericRequest(
