@@ -2,19 +2,67 @@
 
 namespace Tests\Tempest\Integration\Database\ModelInspector;
 
+use PHPUnit\Framework\Attributes\Test;
 use Tempest\Database\BelongsTo;
 use Tempest\Database\Config\DatabaseDialect;
+use Tempest\Database\Config\PostgresConfig;
+use Tempest\Database\Connection\PDOConnection;
+use Tempest\Database\Database;
 use Tempest\Database\Exceptions\ModelDidNotHavePrimaryColumn;
+use Tempest\Database\GenericDatabase;
 use Tempest\Database\HasMany;
 use Tempest\Database\PrimaryKey;
 use Tempest\Database\Table;
+use Tempest\Database\Transactions\GenericTransactionManager;
+use Tempest\EventBus\EventBus;
+use Tempest\Mapper\SerializerFactory;
 use Tests\Tempest\Integration\FrameworkIntegrationTestCase;
 
 use function Tempest\Database\inspect;
 
 final class BelongsToTest extends FrameworkIntegrationTestCase
 {
-    public function test_belongs_to(): void
+    #[Test]
+    public function relation_queries_quote_camel_case_identifiers_for_postgresql(): void
+    {
+        $connection = new PDOConnection(new PostgresConfig());
+        $this->container->singleton(
+            Database::class,
+            new GenericDatabase(
+                connection: $connection,
+                transactionManager: new GenericTransactionManager($connection),
+                serializerFactory: $this->container->get(SerializerFactory::class),
+                eventBus: $this->container->get(EventBus::class),
+            ),
+        );
+
+        $items = inspect(PostgresRelationStash::class)->getRelation('items');
+        $stash = inspect(PostgresRelationStashItem::class)->getRelation('stash');
+
+        $this->assertSame(
+            'LEFT JOIN "stash_items" ON "stash_items"."stashId" = "stashes"."id"',
+            $items->getJoinStatement()->compile(DatabaseDialect::POSTGRESQL),
+        );
+        $this->assertSame(
+            'EXISTS (SELECT 1 FROM "stash_items" WHERE "stash_items"."stashId" = "stashes"."id")',
+            $items->getExistsStatement()->compile(DatabaseDialect::POSTGRESQL),
+        );
+        $this->assertSame(
+            'LEFT JOIN "stashes" ON "stashes"."id" = "stash_items"."stashId"',
+            $stash->getJoinStatement()->compile(DatabaseDialect::POSTGRESQL),
+        );
+        $this->assertSame(
+            'EXISTS (SELECT 1 FROM "stashes" WHERE "stashes"."id" = "stash_items"."stashId")',
+            $stash->getExistsStatement()->compile(DatabaseDialect::POSTGRESQL),
+        );
+        $this->assertSame(
+            'SELECT "stashes"."id" AS "stashes.id" FROM "stashes" WHERE "stashes"."id" = (SELECT "stashId" FROM "stash_items" WHERE "stash_items"."id" = ?)',
+            $stash->query(new PrimaryKey(1))->select()->compile()->toString(),
+        );
+    }
+
+    #[Test]
+    public function belongs_to(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('relation');
@@ -27,7 +75,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_with_relation_join_field(): void
+    #[Test]
+    public function belongs_to_with_relation_join_field(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('relationJoinField');
@@ -40,7 +89,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_with_relation_join_field_and_table(): void
+    #[Test]
+    public function belongs_to_with_relation_join_field_and_table(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('relationJoinFieldAndTable');
@@ -53,7 +103,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_with_owner_join_field(): void
+    #[Test]
+    public function belongs_to_with_owner_join_field(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('ownerJoinField');
@@ -66,7 +117,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_with_owner_join_field_and_table(): void
+    #[Test]
+    public function belongs_to_with_owner_join_field_and_table(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('ownerJoinFieldAndTable');
@@ -79,7 +131,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_with_parent(): void
+    #[Test]
+    public function belongs_to_with_parent(): void
     {
         $model = inspect(BelongsToTestOwnerModel::class);
         $relation = $model->getRelation('relation')->setParent('parent');
@@ -90,7 +143,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_belongs_to_throws_exception_for_model_without_primary_key(): void
+    #[Test]
+    public function belongs_to_throws_exception_for_model_without_primary_key(): void
     {
         $model = inspect(BelongsToTestOwnerWithoutIdModel::class);
         $relation = $model->getRelation('relation');
@@ -103,7 +157,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         $relation->getJoinStatement();
     }
 
-    public function test_multiple_belongs_to_same_table_generates_distinct_joins(): void
+    #[Test]
+    public function multiple_belongs_to_same_table_generates_distinct_joins(): void
     {
         $model = inspect(BelongsToTestRoleWithMultipleSameTableRelationsModel::class);
 
@@ -121,7 +176,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_multiple_belongs_to_same_table_with_full_table_column_syntax(): void
+    #[Test]
+    public function multiple_belongs_to_same_table_with_full_table_column_syntax(): void
     {
         $model = inspect(BelongsToTestRoleWithFullSpecRelationsModel::class);
 
@@ -139,7 +195,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_multiple_belongs_to_same_table_select_fields(): void
+    #[Test]
+    public function multiple_belongs_to_same_table_select_fields(): void
     {
         $model = inspect(BelongsToTestRoleWithMultipleSameTableRelationsModel::class);
 
@@ -157,7 +214,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_self_referencing_belongs_to(): void
+    #[Test]
+    public function self_referencing_belongs_to(): void
     {
         $model = inspect(SelfReferencingCategoryModel::class);
         $relation = $model->getRelation('parent');
@@ -170,7 +228,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_self_referencing_belongs_to_select_fields(): void
+    #[Test]
+    public function self_referencing_belongs_to_select_fields(): void
     {
         $model = inspect(SelfReferencingCategoryModel::class);
         $relation = $model->getRelation('parent');
@@ -193,7 +252,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_self_referencing_belongs_to_with_custom_owner_join(): void
+    #[Test]
+    public function self_referencing_belongs_to_with_custom_owner_join(): void
     {
         $model = inspect(SelfReferencingCategoryModel::class);
         $relation = $model->getRelation('parentWithCustomOwnerJoin');
@@ -204,7 +264,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_self_referencing_has_many(): void
+    #[Test]
+    public function self_referencing_has_many(): void
     {
         $model = inspect(SelfReferencingCategoryModel::class);
         $relation = $model->getRelation('children');
@@ -217,7 +278,8 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
         );
     }
 
-    public function test_self_referencing_has_many_select_fields(): void
+    #[Test]
+    public function self_referencing_has_many_select_fields(): void
     {
         $model = inspect(SelfReferencingCategoryModel::class);
         $relation = $model->getRelation('children');
@@ -234,6 +296,27 @@ final class BelongsToTest extends FrameworkIntegrationTestCase
             $selectFields[1]->compile(DatabaseDialect::SQLITE),
         );
     }
+}
+
+#[Table('stashes')]
+final class PostgresRelationStash
+{
+    public PrimaryKey $id;
+
+    /** @var \Tests\Tempest\Integration\Database\ModelInspector\PostgresRelationStashItem[] */
+    #[HasMany(ownerJoin: 'stashId')]
+    public array $items = [];
+}
+
+#[Table('stash_items')]
+final class PostgresRelationStashItem
+{
+    public PrimaryKey $id;
+
+    #[BelongsTo(ownerJoin: 'stashId')]
+    public PostgresRelationStash $stash;
+
+    public string $stashId;
 }
 
 #[Table('relation')]
