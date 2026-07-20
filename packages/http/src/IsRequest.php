@@ -65,6 +65,13 @@ trait IsRequest
         $this->files = $files;
         $this->raw = $raw;
 
+        if ($this->method === Method::CONNECT) {
+            $this->path ??= '';
+            $this->query ??= [];
+
+            return;
+        }
+
         $uri = Uri::from($this->uri);
         $this->path ??= rawurldecode($uri->path ?? '');
         $this->query ??= $uri->query;
