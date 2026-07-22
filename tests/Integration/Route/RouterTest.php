@@ -16,18 +16,30 @@ use Tempest\Http\Session\Session;
 use Tempest\Http\Session\SessionId;
 use Tempest\Http\Session\SessionManager;
 use Tempest\Http\Status;
+use Tempest\Reflection\ClassReflector;
+use Tempest\Reflection\MethodReflector;
+use Tempest\Router\Bindable;
+use Tempest\Router\Exceptions\RouteBindingDidNotSupportRelations;
 use Tempest\Router\GenericRouter;
+use Tempest\Router\Get;
+use Tempest\Router\MatchedRoute;
+use Tempest\Router\RouteBindingInitializer;
 use Tempest\Router\RouteConfig;
 use Tempest\Router\Router;
+use Tempest\Router\Routing\Construction\DiscoveredRoute;
 use Tempest\Router\SecFetchMode;
 use Tempest\Router\SecFetchSite;
+use Tempest\Router\WithRelations;
 use Tests\Tempest\Fixtures\Controllers\TestGlobalMiddleware;
 use Tests\Tempest\Fixtures\Controllers\TestMiddleware;
+use Tests\Tempest\Fixtures\Events\QueryLogger;
 use Tests\Tempest\Fixtures\Migrations\CreateAuthorTable;
 use Tests\Tempest\Fixtures\Migrations\CreateBookTable;
+use Tests\Tempest\Fixtures\Migrations\CreateChapterTable;
 use Tests\Tempest\Fixtures\Migrations\CreatePublishersTable;
 use Tests\Tempest\Fixtures\Modules\Books\Models\Author;
 use Tests\Tempest\Fixtures\Modules\Books\Models\Book;
+use Tests\Tempest\Fixtures\Modules\Books\Models\Chapter;
 use Tests\Tempest\Integration\FrameworkIntegrationTestCase;
 use Tests\Tempest\Integration\Route\Fixtures\HeadController;
 use Tests\Tempest\Integration\Route\Fixtures\Http500Controller;
@@ -112,6 +124,54 @@ final class RouterTest extends FrameworkIntegrationTestCase
 
         $this->assertSame(Status::OK, $response->status);
         $this->assertSame('Test', $response->body);
+    }
+
+    #[Test]
+    public function route_binding_with_relations(): void
+    {
+        $this->database->migrate(
+            CreateMigrationsTable::class,
+            CreatePublishersTable::class,
+            CreateAuthorTable::class,
+            CreateBookTable::class,
+            CreateChapterTable::class,
+        );
+
+        $book = Book::create(
+            title: 'Test',
+            author: new Author(name: 'Brent'),
+        );
+
+        Chapter::create(title: 'Chapter', book: $book);
+
+        QueryLogger::reset();
+
+        $this->http
+            ->get('/books-with-relations/1')
+            ->assertOk()
+            ->assertSee('Brent:1');
+
+        $this->assertCount(1, QueryLogger::$queries);
+    }
+
+    #[Test]
+    public function route_binding_with_relations_rejects_an_unsupported_resolver(): void
+    {
+        $handler = MethodReflector::fromParts(UnsupportedRelationsController::class, 'handle');
+        $route = DiscoveredRoute::fromRoute(new Get('/unsupported/{binding}'), [], $handler);
+
+        $this->container->singleton(
+            MatchedRoute::class,
+            new MatchedRoute($route, ['binding' => 'test']),
+        );
+
+        $this->expectException(RouteBindingDidNotSupportRelations::class);
+
+        new RouteBindingInitializer()->initialize(
+            new ClassReflector(UnsupportedRelationsBindable::class),
+            tag: null,
+            container: $this->container,
+        );
     }
 
     #[Test]
@@ -371,6 +431,22 @@ final class RouterTest extends FrameworkIntegrationTestCase
             ->get('/posts/789/tech')
             ->assertOk()
             ->assertSee('Post 789 in category tech');
+    }
+}
+
+final readonly class UnsupportedRelationsController
+{
+    public function handle(#[WithRelations('author')] UnsupportedRelationsBindable $binding): Ok
+    {
+        return new Ok();
+    }
+}
+
+final readonly class UnsupportedRelationsBindable implements Bindable
+{
+    public static function resolve(string $input): static
+    {
+        return new self();
     }
 }
 
