@@ -11,6 +11,7 @@ use Tempest\Discovery\DiscoveryLocation;
 use Tempest\Framework\Testing\IntegrationTest;
 use Tempest\Framework\Testing\TestingDatabaseInitializer;
 use Tempest\Support\Filesystem;
+use Tempest\Support\Filesystem\Exceptions\FilesystemException;
 use Tempest\Support\Path;
 
 use function Tempest\Support\str;
@@ -37,7 +38,18 @@ abstract class FrameworkIntegrationTestCase extends IntegrationTest
         $databaseConfigPath = Path\normalize(__DIR__, '..', 'Fixtures/Config/database.config.php');
 
         if (! Filesystem\exists($databaseConfigPath)) {
-            Filesystem\copy_file($defaultDatabaseConfigPath, $databaseConfigPath);
+            $temporaryDatabaseConfigPath = $databaseConfigPath . '.' . getmypid() . '.tmp';
+
+            Filesystem\copy_file($defaultDatabaseConfigPath, $temporaryDatabaseConfigPath);
+
+            try {
+                Filesystem\move($temporaryDatabaseConfigPath, $databaseConfigPath);
+            } catch (FilesystemException) { // @mago-expect lint:no-empty-catch-clause
+            }
+
+            if (Filesystem\exists($temporaryDatabaseConfigPath)) {
+                Filesystem\delete_file($temporaryDatabaseConfigPath);
+            }
         }
 
         $this->container->config(require $databaseConfigPath);
