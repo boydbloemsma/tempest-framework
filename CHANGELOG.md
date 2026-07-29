@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [3.17.0](https://github.com/tempestphp/tempest-framework/compare/v3.16.2..3.17.0)  —  2026-07-27
+## [3.18.0](https://github.com/tempestphp/tempest-framework/compare/v3.17.0..3.18.0)  —  2026-07-29
+
+### 🚀 Features
+
+- **mcp**: add mcp package (#2236) ([77333ad](https://github.com/tempestphp/tempest-framework/commit/77333ad58151f3e9fa405c945168cdcc479b3d32))
+
+
+## [3.17.0](https://github.com/tempestphp/tempest-framework/compare/v3.16.2..v3.17.0)  —  2026-07-27
 
 ### 🚨 Breaking changes
 
