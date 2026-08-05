@@ -248,3 +248,35 @@ use Tempest\Discovery\SkipDiscovery;
 final readonly class MyCommandBusMiddleware implements CommandBusMiddleware
 { /* … */ }
 ```
+
+## Configuration
+
+Pending async commands are persisted through an implementation of the {b`Tempest\CommandBus\CommandRepository`} interface, configured via {`Tempest\CommandBus\CommandBusConfig`}. This is what allows the `command:monitor` process to pick up commands, even from a different process or server than the one that dispatched them.
+
+By default, Tempest stores pending commands as files on disk. A few other implementations are available:
+
+- {`Tempest\CommandBus\AsyncCommandRepositories\FileCommandRepository`}
+- {`Tempest\CommandBus\AsyncCommandRepositories\MemoryRepository`}
+- {`Tempest\CommandBus\AsyncCommandRepositories\DatabaseCommandRepository`}
+- {`Tempest\CommandBus\AsyncCommandRepositories\RedisCommandRepository`}
+
+You may switch to the database or Redis backend by running the installer, which publishes the appropriate configuration file—and, for the database backend, a migration for the `commands` table:
+
+```sh
+./tempest install command-bus
+```
+
+:::info
+When choosing the database backend, don't forget to run `./tempest migrate` after installing.
+:::
+
+Alternatively, you may configure the repository manually by creating a `commandBus.config.php` file:
+
+```php app/commandBus.config.php
+use Tempest\CommandBus\AsyncCommandRepositories\DatabaseCommandRepository;
+use Tempest\CommandBus\CommandBusConfig;
+
+return new CommandBusConfig(
+    commandRepositoryClass: DatabaseCommandRepository::class,
+);
+```
