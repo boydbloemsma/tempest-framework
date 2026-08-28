@@ -266,10 +266,6 @@ You may switch to the database or Redis backend by running the installer, which 
 ./tempest install command-bus
 ```
 
-:::info
-When choosing the database backend, don't forget to run `./tempest migrate` after installing.
-:::
-
 Alternatively, you may configure the repository manually by creating a `commandBus.config.php` file:
 
 ```php app/commandBus.config.php
