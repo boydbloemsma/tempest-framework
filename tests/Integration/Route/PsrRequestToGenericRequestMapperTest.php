@@ -13,6 +13,8 @@ use Tempest\Cryptography\Encryption\Encrypter;
 use Tempest\Http\Cookie\CookieConfig;
 use Tempest\Http\Cookie\CookieManager;
 use Tempest\Http\GenericRequest;
+use Tempest\Http\Ip\ClientIpResolver;
+use Tempest\Http\Ip\TrustedProxiesConfig;
 use Tempest\Http\Mappers\PsrRequestToGenericRequestMapper;
 use Tempest\Http\Request;
 use Tempest\Http\Upload;
@@ -32,7 +34,7 @@ final class PsrRequestToGenericRequestMapperTest extends FrameworkIntegrationTes
     }
 
     private PsrRequestToGenericRequestMapper $mapper {
-        get => new PsrRequestToGenericRequestMapper($this->encrypter, $this->cookies, new CookieConfig());
+        get => new PsrRequestToGenericRequestMapper($this->encrypter, $this->cookies, new CookieConfig(), new ClientIpResolver(new TrustedProxiesConfig()));
     }
 
     #[Test]
@@ -107,6 +109,31 @@ final class PsrRequestToGenericRequestMapperTest extends FrameworkIntegrationTes
     }
 
     #[Test]
+    public function nested_files(): void
+    {
+        /** @var GenericRequest $request */
+        $request = $this->mapper->map(
+            from: $this->http->makePsrRequest('/', files: [
+                'avatar' => $this->createUploadedFile('avatar.png'),
+                'documents' => [
+                    $this->createUploadedFile('one.txt'),
+                    'contract' => $this->createUploadedFile('contract.pdf'),
+                ],
+            ]),
+            to: Request::class,
+        );
+
+        $this->assertInstanceOf(Upload::class, $request->files['avatar']);
+        $this->assertSame('avatar.png', $request->files['avatar']->getClientFilename());
+
+        $this->assertInstanceOf(Upload::class, $request->files['documents'][0]);
+        $this->assertSame('one.txt', $request->files['documents'][0]->getClientFilename());
+
+        $this->assertInstanceOf(Upload::class, $request->files['documents']['contract']);
+        $this->assertSame('contract.pdf', $request->files['documents']['contract']->getClientFilename());
+    }
+
+    #[Test]
     public function body_field_in_body(): void
     {
         $request = $this->mapper->map(
@@ -143,5 +170,15 @@ final class PsrRequestToGenericRequestMapperTest extends FrameworkIntegrationTes
         $cookies = $this->cookies->all();
         $this->assertSame($cookies['foo']->expiresAt, -1);
         $this->assertSame($cookies['foo']->value, '');
+    }
+
+    private function createUploadedFile(string $filename): UploadedFile
+    {
+        return new UploadedFile(
+            streamOrFile: new Stream('php://temp', 'r+'),
+            size: 0,
+            errorStatus: UPLOAD_ERR_OK,
+            clientFilename: $filename,
+        );
     }
 }

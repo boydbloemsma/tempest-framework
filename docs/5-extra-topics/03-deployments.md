@@ -7,7 +7,7 @@ There are many ways to deploy a PHP application. This page will list the most ba
 
 ## Prerequisites
 
-Your server will need PHP [8.4+](https://www.php.net/downloads.php) and [Composer](https://getcomposer.org/) at the minimum. You should also have either [Bun](https://bun.sh) or [Node](https://nodejs.org) available if you chose to bundle front-end assets. While shared servers will probably work given enough configuration, it is recommended to use a dedicated server for production. The rest of this page will assume you have a server with SSH access available. 
+Your server will need PHP [8.5+](https://www.php.net/downloads.php) and [Composer](https://getcomposer.org/) at the minimum. You should also have either [Bun](https://bun.sh) or [Node](https://nodejs.org) available if you chose to bundle front-end assets. While shared servers will probably work given enough configuration, it is recommended to use a dedicated server for production. The rest of this page will assume you have a server with SSH access available. 
 
 ## Deployment scripts
 
@@ -36,7 +36,7 @@ This `deploy.sh` script could look something like this:
 {:hl-keyword:tempest:} migrate:up --force
 {:hl-keyword:tempest:} static:clean --force
 {:hl-keyword:bun:} run build
-{:hl-keyword:tempest:} static:generate --allow-dead-links --verbose=true
+{:hl-keyword:tempest:} static:generate --crawl --verbose=true
 ```
 
 As you can see, there are a number of steps involved to deploying a Tempest project:
