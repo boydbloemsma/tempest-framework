@@ -17,6 +17,7 @@ Most utilities provided by Tempest have a function-based implementation under th
 - [Filesystem paths](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Path/functions.php)
 - [Json manipulation](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Json/functions.php)
 - [Random values](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Random/functions.php)
+- [IP addresses](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Ip/functions.php)
 - [Pluralization](https://github.com/tempestphp/tempest-intl)
 - [PHP namespaces](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Namespace/functions.php)
 
@@ -69,6 +70,38 @@ $items = new ImmutableArray(glob(__DIR__ . '/content/*.md'))
 ```
 
 Note that you may use the `arr()` function as a shorthand to create an {b`\Tempest\Support\Arr\ImmutableArray`} instance.
+
+## IP addresses
+
+Tempest provides IP address utilities through [namespaced functions](https://github.com/tempestphp/tempest-framework/blob/main/packages/support/src/Ip/functions.php) or the {`\Tempest\Support\Ip\IpAddress`} object, which is what {b`Tempest\Http\Request`} uses for [the address a request came from](../1-essentials/01-routing.md#client-ip-address).
+
+```php
+use Tempest\Support\Ip;
+use Tempest\Support\Ip\IpAddress;
+
+// Functional API
+Ip\matches('10.0.1.24', '10.0.0.0/8');
+Ip\is_private('10.0.1.24');
+
+// Object-oriented API
+$ip = IpAddress::from('10.0.1.24');
+
+$ip->matches('10.0.0.0/8');
+$ip->matchesAny(['10.0.0.0/8', '2001:db8::/32']);
+$ip->isPrivate;
+$ip->isIpv4;
+```
+
+Both IPv4 and IPv6 are supported, as are CIDR ranges. Addresses are never matched across families, although IPv4-mapped IPv6 addresses such as `{txt}::ffff:127.0.0.1` are compared as IPv4.
+
+The same address may be written in more than one notation, so `equals()` should be used instead of comparing addresses as strings:
+
+```php
+IpAddress::from('::ffff:127.0.0.1')->equals('127.0.0.1'); // true
+IpAddress::from('2001:db8::1')->equals('2001:0db8:0000:0000:0000:0000:0000:0001'); // true
+```
+
+`{php}IpAddress::from()` throws {b`Tempest\Support\Ip\InvalidIpAddress`} when the given value is not an address. Use `{php}IpAddress::tryFrom()` to get `null` instead.
 
 ## Recommendations
 
